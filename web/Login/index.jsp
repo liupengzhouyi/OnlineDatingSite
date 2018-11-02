@@ -70,7 +70,6 @@
         // 为了让浏览器发送请求到servlet, 所以一定要改变src
         document.getElementsByTagName("img")[0].src = "/Tools/VerifyCode/VerifyCodeServlet" +
             "?time=" + new Date().getTime();
-        ///day_1_12/VerifyCodeServlet?time=
     };
 </script>
 

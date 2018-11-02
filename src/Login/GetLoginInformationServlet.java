@@ -11,9 +11,20 @@ import java.io.IOException;
 @WebServlet(name = "GetLoginInformationServlet")
 public class GetLoginInformationServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-
+        //初始化函数
         init(request);
+        //判断信息
+        boolean key = this.veriftInformation();
+        if (key) {
+            //Session 保存 用户ID
+            this.saveUserIdToSession(request);
+            //进入主页
+            response.sendRedirect("/Main/index.jsp");
+        } else {
+            //跳转错误信息页面
+            //登录过程出错
+
+        }
 
     }
 
@@ -46,6 +57,91 @@ public class GetLoginInformationServlet extends HttpServlet {
     public void getSessionVeriftCode(HttpServletRequest request) {
         HttpSession httpSession = request.getSession();
         this.setUser_verify_code_by_session((String) httpSession.getAttribute(""));
+    }
+
+    /**
+     * 判断用户输入信息是否正确
+     * @return
+     */
+    public boolean veriftInformation() {
+        boolean returnKey = false;
+        //验证是否有没有出入的内容
+        boolean key_I = this.veriftInput();
+        //是否验证码正确
+        boolean key_II = this.veriftVeriftCode();
+        //是否密码正确
+        boolean key_III = this.veriftPassword();
+        //返回信息
+        if (key_I && key_II && key_III) {
+            returnKey = true;
+        }
+        return returnKey;
+    }
+
+    /**
+     * 判断用户是否完全输入
+     * @return
+     */
+    public boolean veriftInput() {
+        boolean returnKey = false;
+        //判断用户ID输入
+        if (this.getUser_id().toString() == "") {
+            //没有输入用户ID
+
+        } else {
+            //判断用户验证码输入
+            if (this.getUser_verify_code().toString() == "") {
+                //用户没有输入验证码
+
+            } else {
+                //判断用户密码输入
+                if ((this.getUser_password() + "").toString() == "") {
+                    //用户没有输入密码
+
+                } else {
+                    returnKey = true;
+                }
+            }
+        }
+        return returnKey;
+    }
+
+    /**
+     * 判断用户输入的验证码是否正确
+     * @return
+     */
+    public boolean veriftVeriftCode() {
+        boolean returnKey = false;
+        if (this.getUser_verify_code_by_session().equals(this.getUser_verify_code())) {
+            returnKey = true;
+        } else {
+            //验证码错误
+
+        }
+        return returnKey;
+    }
+
+    /**
+     * 判断用户输入的密码是否正确
+     * @return
+     */
+    public boolean veriftPassword() {
+        boolean returnKey = false;
+        /*if () {
+
+        } else {
+
+        }*/
+        return returnKey;
+    }
+
+    /**
+     * 保存当前用户ID到Session
+     * @param request
+     */
+    public void saveUserIdToSession(HttpServletRequest request) {
+        HttpSession httpSession = request.getSession();
+        httpSession.setAttribute("user_id", this.getUser_id());
     }
 
     public String getUser_id() {

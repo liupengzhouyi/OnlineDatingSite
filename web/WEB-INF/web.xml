@@ -16,16 +16,6 @@
 
     <!--当前的验证码-->
     <servlet>
-        <servlet-name>ImageServlet</servlet-name>
-        <servlet-class>Tools.VerifyCode.ImageServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>ImageServlet</servlet-name>
-        <url-pattern>/Tools/VerifyCode/ImageServle</url-pattern>
-    </servlet-mapping>
-
-    <!--当前的验证码-->
-    <servlet>
         <servlet-name>VerifyCodeServlet</servlet-name>
         <servlet-class>Tools.VerifyCode.VerifyCodeServlet</servlet-class>
     </servlet>
