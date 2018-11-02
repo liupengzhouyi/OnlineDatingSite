@@ -1,0 +1,125 @@
+-- 用户表
+create table user
+(
+  -- 用户ID
+  user_id varchar(20) primary key ,
+  -- 用户名
+  user_name varchar(20) ,
+  -- 密码值
+  user_password_value varchar(30) ,
+  -- 电子邮件
+  user_email varchar(30) ,
+  -- 性别
+  user_sex varchar(5) ,
+  -- 电话号码
+  user_phone varchar(15) ,
+  -- 省份编号
+  user_privince int ,
+  -- 创建日期
+  user_create_date date ,
+  -- 创建时间
+  user_create_time time
+);
+
+-- 省份编号
+create table privince_table
+(
+  -- 省份编号
+  provices_id int primary key ,
+  -- 省份名称
+  provices_name varchar(20)
+);
+
+-- 获取当前注册 编号
+create table privince_number_table
+(
+  -- 当前的注册省份编号
+  privince_id int primary key ,
+  -- 日期
+  today date ,
+  -- 数量
+  number int
+);
+
+-- 我的好友列表
+create table my_friends
+(
+  -- 好友编号
+  friend_id      int primary key auto_increment,
+  -- 我的ID
+  my_id          varchar(20),
+  -- 好友ID
+  my_friend_id   varchar(20),
+  -- 我的好友叫I
+  my_name        varchar(20),
+  -- 我的好友叫II
+  my_friend_name varchar(20),
+  -- 建立好友时间
+  friend_date    date,
+  -- 关系是否存在
+  -- 0 否
+  -- 1 在
+  friendship     int
+);
+
+-- 好友申请表
+create table apply_for_friend
+(
+  -- 编号
+  apply_id      int primary key auto_increment,
+  -- 好友编号
+  friend_number varchar(20),
+  -- 我的编号
+  my_number     varchar(20),
+  -- sql语句
+  my_sql        varchar(1000),
+  -- 是否为最新数据
+  -- 1 是
+  -- 0 否
+  new_key       int
+);
+
+-- 好友申请结果数据表
+create table apply_return
+(
+  -- 编号
+  return_id int primary key auto_increment,
+  -- 我的ID
+  my_id     varchar(20),
+  -- 朋友的ID
+  friend_id varchar(20),
+  -- 申请结果
+  -- 0 拒绝
+  -- 1 同意
+  can_make  int
+);
+
+-- 聊天信息储表
+create table char_information
+(
+  -- 信息编号
+  char_id        int primary key auto_increment,
+  -- 我的编号
+  user_id        varchar(20),
+  -- 好友编号
+  friend_id      varchar(20),
+  -- 文本
+  text           varchar(200),
+  -- 日期
+  char_data_time datetime,
+  -- 是否为最新消息
+  is_new         int
+);
+
+-- 聊天信息提示表
+create table char_tie
+(
+  -- 编号
+  tie_id  int primary key auto_increment,
+  -- 用户编号
+  user_id varchar(20),
+  -- 是否读取
+  -- 1 是
+  -- 0 否
+  is_new  int
+);
