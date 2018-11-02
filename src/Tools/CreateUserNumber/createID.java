@@ -1,6 +1,7 @@
 package Tools.CreateUserNumber;
-import JavaBean.Tools.*;
 
+
+import Tools.GetTime.getNowTime;
 
 public class createID {
 

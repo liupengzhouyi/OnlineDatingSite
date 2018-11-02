@@ -1,0 +1,29 @@
+-- 聊天信息储表
+create table char_information
+(
+  -- 信息编号
+  char_id        int primary key auto_increment,
+  -- 我的编号
+  user_id        varchar(20),
+  -- 好友编号
+  friend_id      varchar(20),
+  -- 文本
+  text           varchar(200),
+  -- 日期
+  char_data_time datetime,
+  -- 是否为最新消息
+  is_new         int
+);
+
+-- 聊天信息提示表
+create table char_tie
+(
+  -- 编号
+  tie_id  int primary key auto_increment,
+  -- 用户编号
+  user_id varchar(20),
+  -- 是否读取
+  -- 1 是
+  -- 0 否
+  is_new  int
+);

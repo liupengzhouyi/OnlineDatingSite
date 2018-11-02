@@ -78,22 +78,21 @@ public class linkDatabases {
         return resultSet;
     }
 
-/*
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         linkDatabases linkDatabase = new linkDatabases();
         // linkDatabase.saveData("insert into lp_sleep_table(lp_id, lp_date, lp_time1) value (2, '2018-09-27', '21:58:32');");
-        *//*Connection connection = linkDatabase.getConnection();
+        Connection connection = linkDatabase.getConnection();
         if (connection != null) {
             System.out.print("数据库链接成功！！");
-            String string = "INSERT INTO user (lp_id, lp_name, lp_password) VALUES (1809120007,1234,1234);";
+            /*String string = "INSERT INTO user (lp_id, lp_name, lp_password) VALUES (1809120007,1234,1234);";
             boolean ifSave = linkDatabase.saveData(string);
             if (ifSave) {
                 System.out.print("数据保存成功！");
             } else {
                 System.out.print("数据没有保存！");
-            }
+            }*/
         } else {
             System.out.print("数据库链接失败！");
-        }*//*
-    }*/
+        }
+    }
 }
