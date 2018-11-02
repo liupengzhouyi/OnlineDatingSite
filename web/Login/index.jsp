@@ -11,7 +11,7 @@
     <title>在线交友网登录</title>
 </head>
 <body>
-<form action="/makefriend/GetUserLoginInformationServlet" method="post">
+<form action="/Login/GetLoginInformationServlet" method="post">
     <table border="1">
         <tr>
             <th colspan="3">
@@ -39,7 +39,7 @@
                 验证码
             </th>
             <th colspan="1">
-                <img src="/ServletPackage/VerifyCodeServlet/VerifyCodeServlet">
+                <img src="/Tools/VerifyCode/VerifyCodeServlet">
             </th>
             <td colspan="1">
                 <button type="button" id="lp_button">看不清，换一张！</button>
@@ -68,8 +68,8 @@
     document.getElementById("lp_button").onclick = function () {
         // 获取img元素
         // 为了让浏览器发送请求到servlet, 所以一定要改变src
-        document.getElementsByTagName("img")[0].src = "/ServletPackage/VerifyCodeServlet/VerifyCodeServlet"
-            + "?time=" + new Date().getTime();
+        document.getElementsByTagName("img")[0].src = "/Tools/VerifyCode/VerifyCodeServlet" +
+            "?time=" + new Date().getTime();
         ///day_1_12/VerifyCodeServlet?time=
     };
 </script>

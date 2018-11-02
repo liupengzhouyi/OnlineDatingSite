@@ -3,4 +3,34 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+
+    <!--获取用户登录信息-->
+    <servlet>
+        <servlet-name>GetLoginInformationServlet</servlet-name>
+        <servlet-class>Login.GetLoginInformationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetLoginInformationServlet</servlet-name>
+        <url-pattern>/Login/GetLoginInformationServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--当前的验证码-->
+    <servlet>
+        <servlet-name>ImageServlet</servlet-name>
+        <servlet-class>Tools.VerifyCode.ImageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ImageServlet</servlet-name>
+        <url-pattern>/Tools/VerifyCode/ImageServle</url-pattern>
+    </servlet-mapping>
+
+    <!--当前的验证码-->
+    <servlet>
+        <servlet-name>VerifyCodeServlet</servlet-name>
+        <servlet-class>Tools.VerifyCode.VerifyCodeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VerifyCodeServlet</servlet-name>
+        <url-pattern>/Tools/VerifyCode/VerifyCodeServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
