@@ -25,7 +25,6 @@ public class GetLoginInformationServlet extends HttpServlet {
             //登录过程出错
 
         }
-
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
