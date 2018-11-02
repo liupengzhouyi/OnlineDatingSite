@@ -24,5 +24,6 @@
     <orderEntry type="library" exported="" name="servlet-api" level="project" />
     <orderEntry type="library" exported="" name="commons-dbutils-1" level="project" />
     <orderEntry type="library" exported="" name="commons-dbcp2-2.5" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Tomcat 9.0.10" level="application_server_libraries" />
   </component>
 </module>
