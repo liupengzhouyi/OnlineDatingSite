@@ -40,7 +40,7 @@ public class GetSigninInformationServlet extends HttpServlet {
                     this.saveSession(request);
                     //操作提示
                     //页面跳转
-                    response.sendRedirect("/");
+                    response.sendRedirect("/Success/signin/index.jsp");
                 } catch (SQLException e) {
                     //生产用户ID 出错
 

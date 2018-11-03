@@ -33,4 +33,20 @@
         <servlet-name>GetSigninInformationServlet</servlet-name>
         <url-pattern>/Signin/GetSigninInformationServlet</url-pattern>
     </servlet-mapping>
+
+    <!--获取添加好友信息-->
+    <servlet>
+        <servlet-name>GetAddFriendInformationServlet</servlet-name>
+        <servlet-class>AddFriend.GetAddFriendInformationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetAddFriendInformationServlet</servlet-name>
+        <url-pattern>/AddFriend/GetAddFriendInformationServlet</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+
 </web-app>
