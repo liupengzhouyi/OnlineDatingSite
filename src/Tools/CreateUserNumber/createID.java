@@ -1,7 +1,7 @@
 package Tools.CreateUserNumber;
 
 
-import Tools.GetTime.getNowTime;
+import Tools.GetTime.GetNowTime;
 
 public class createID {
 
@@ -10,7 +10,7 @@ public class createID {
         //省份： 内蒙古自治区
         //第几个： 56
         //获取日期
-        String date = new getNowTime().getUsedStringForID();
+        String date = new GetNowTime().getUsedStringForID();
         ID = date;
 
         //获取省份

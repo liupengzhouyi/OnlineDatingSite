@@ -1,0 +1,25 @@
+-- 省份编号
+create table privince_table
+(
+  -- 省份编号
+  provices_id int primary key ,
+  -- 省份名称
+  provices_name varchar(20)
+);
+
+-- 获取当前注册 编号
+create table privince_number_table
+(
+  -- 当前的注册省份编号
+  privince_id int primary key ,
+  -- 日期
+  today date ,
+  -- 数量
+  number int
+);
+
+
+
+
+
+

@@ -18,12 +18,22 @@ public class GetSigninInformationServlet extends HttpServlet {
         //赋值
         this.setValue(request);
         //判断输入格式
+        boolean keyOfInput = this.verifyInput();
+        if (keyOfInput) {
+            //校验数据
+            this.verifyData(response);
+            //转化数据
+            this.transformationData();
+            //生成用户ID
 
-        //准备数据
+            //数据入库
 
-        //数据入库
+            //操作提示
+        } else {
+           //错误提示：数据输入不完整
 
-        //操作提示
+        }
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -58,11 +68,6 @@ public class GetSigninInformationServlet extends HttpServlet {
         this.setName(user_name);
         //获取用户性别
         String user_sex = request.getParameter("sex");
-        if (user_sex.equals("0")) {
-            user_sex = "男";
-        } else {
-            user_sex = "女";
-        }
         this.setSex(user_sex);
         //获取用户密码I
         String user_passwordI = request.getParameter("user_passwordI");
@@ -74,12 +79,7 @@ public class GetSigninInformationServlet extends HttpServlet {
         String user_phone = request.getParameter("user_phone");
         this.setPhone(user_phone);
         //获取用户省份number
-        String user_privince = "";
-        String privince_number = request.getParameter("privince");
-
-        //user_privince = new getPrivices().getPrivinceByNumber(privince_number);
-
-
+        String user_privince  = request.getParameter("privince");
         this.setPrivince(user_privince);
         System.out.println(user_privince);
         //获取用户验证码
@@ -91,6 +91,114 @@ public class GetSigninInformationServlet extends HttpServlet {
         this.setV_code(verify_code);
     }
 
+    /**
+     * 判断输入数据是否 完整
+     * @return
+     */
+    public boolean verifyInput() {
+        boolean returnKey = false;
+        // 判断电子邮箱
+        boolean keyI = this.isNull(this.getEmail());
+        //判断姓名
+        boolean keyII = this.isNull(this.getName());
+        //判断密码
+        boolean keyIII = this.isNull(this.getPasswordI());
+        //判断重复密码
+        boolean keyIV = this.isNull(this.getPasswordII());
+        // 判断电话号码
+        boolean keyV = this.isNull(this.getPhone());
+        //判断性别
+        boolean keyVI = this.isNull(this.getSex());
+        //判断验证码
+        boolean keyVII = this.isNull(this.getV_code());
+        if (keyI && keyII && keyIII && keyIV && keyV && keyVI && keyVII) {
+            returnKey = true;
+        }
+        return returnKey;
+    }
+
+    /**
+     * 判断是否为空
+     * @param value
+     * @return
+     */
+    public boolean isNull(String value) {
+        boolean returnKey = false;
+        if (value.isEmpty()) {
+            returnKey = true;
+        }
+        if (value.equals("")) {
+            returnKey = true;
+        }
+        if (value == "") {
+            returnKey = true;
+        }
+        return returnKey;
+    }
+
+    //校验数据正确性
+    public void verifyData(HttpServletResponse response) throws IOException {
+        boolean keyII = this.verifyVerifyCode();
+        if (keyII) {
+            //验证码没有问题
+        } else {
+            boolean keyI = this.verifyPassword();
+            if (keyI == false) {
+                //错误页面，密码不一致
+                response.sendRedirect("/");
+            } else{
+                //密码一致
+            }
+        }
+    }
+
+    /**
+     * 校验密码是否一致
+     * @return
+     */
+    public boolean verifyPassword() {
+        boolean returnKey = false;
+        if (this.getPasswordI().equals(this.getPasswordII())) {
+            returnKey = true;
+        }
+        if (this.getPasswordI() == this.getPasswordII()) {
+            returnKey = true;
+        }
+        return returnKey;
+    }
+
+    /**
+     * 校验校验码是否一致
+     * @return
+     */
+    public boolean verifyVerifyCode() {
+        boolean returnKey = false;
+        if (this.getVerify_code().equals(this.getV_code())) {
+            returnKey = true;
+        }
+        if (this.getVerify_code() == this.getV_code()) {
+            returnKey = true;
+        }
+        return returnKey;
+    }
+
+    /**
+     * 转化数据
+      */
+    public void transformationData() {
+        //密码哈希
+        this.setPasswordI(this.getPasswordII().hashCode() + "");
+        //省份转数字
+
+        //性别
+        String user_sex = this.getSex();
+        if (user_sex.equals("0")) {
+            user_sex = "男";
+        } else {
+            user_sex = "女";
+        }
+        this.setSex(user_sex);
+    }
 
     public String getEmail() {
         return email;
@@ -190,6 +298,6 @@ public class GetSigninInformationServlet extends HttpServlet {
     private String privince = null;
     //用户验证码
     private String verify_code = null;
-    //用户验证码来自于Session
+    //用户验证码来自于 Session
     private String v_code = null;
 }

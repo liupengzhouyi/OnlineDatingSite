@@ -1,0 +1,20 @@
+-- 我的好友列表
+create table my_friends
+(
+  -- 好友编号
+  friend_id      int primary key auto_increment,
+  -- 我的ID
+  my_id          varchar(20),
+  -- 好友ID
+  my_friend_id   varchar(20),
+  -- 我的好友叫I
+  my_name        varchar(20),
+  -- 我的好友叫II
+  my_friend_name varchar(20),
+  -- 建立好友时间
+  friend_date    date,
+  -- 关系是否存在
+  -- 0 否
+  -- 1 在
+  friendship     int
+);
