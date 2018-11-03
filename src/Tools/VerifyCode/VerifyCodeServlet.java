@@ -15,6 +15,8 @@ import java.io.IOException;
 @WebServlet(name = "VerifyCodeServlet")
 public class VerifyCodeServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //通过设置响应头控制浏览器以UTF-8的编码显示数据，如果不加这句话，那么浏览器显示的将是乱码
+        response.setContentType("text/html;charset=UTF-8");
         //创建对象
         VerifyCode vc = new VerifyCode();
         //获取图片对象
@@ -25,8 +27,6 @@ public class VerifyCodeServlet extends HttpServlet {
         System.out.println(text);
         // 将系统生成的文本内容保存到session中
         HttpSession httpSession = request.getSession();
-        String string = (String) httpSession.getAttribute("test");
-        System.out.println("在验证码中：" + string);
         httpSession.setAttribute("verify_code_server", text);
         //向浏览器输出图片
         vc.output(bi, response.getOutputStream());

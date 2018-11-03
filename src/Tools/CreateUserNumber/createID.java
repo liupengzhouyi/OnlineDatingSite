@@ -12,6 +12,8 @@ public class createID {
 
         String number = new UpdateProviceNumber(provice).getNumber();
 
+        /*String number = provice;*/
+
         String ID = null;
         //省份： 内蒙古自治区
         //第几个： 56

@@ -18,8 +18,8 @@ public class GetProviceNumber {
     public void init() throws ClassNotFoundException, SQLException {
         proviceMap = new HashMap<String, Object>();
 
-        linkDatabases linkDatabases = new linkDatabases();
-        ResultSet resultSet = linkDatabases.getInformation("select * from privince_table;");
+        linkDatabases lpLinkDatabases = new linkDatabases();
+        ResultSet resultSet = lpLinkDatabases.getInformation("select * from privince_table;");
         while(resultSet.next()) {
             int i = resultSet.getInt("provices_id");
             String provices = resultSet.getString("provices_name");

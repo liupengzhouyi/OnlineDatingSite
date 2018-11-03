@@ -54,9 +54,21 @@ public class test {
         }
     }
 
+    public void dd() {
+        int number = this.provices.length;
+        for(int i=0;i<number;i++) {
+            String string = "<option value=" + i + ">\n" +
+                    "    " + this.provices[i] + "\n" +
+                    "</option>";
+            System.out.println(string);
+        }
+    }
+
+
     public static void main(String[] args) {
         //new test().createProvice();
-        new test().createProviceNumbers();
+        //new test().createProviceNumbers();
+        new test().dd();
     }
 
 }

@@ -33,6 +33,7 @@ public class GetSigninInformationServlet extends HttpServlet {
                 //生成用户ID
                 try {
                     this.setUser_id();
+                    System.out.println(this.getUser_id());
                     //数据入库
                     this.saveInformationIntoDatabase();
                     //用户IDSession
@@ -111,7 +112,7 @@ public class GetSigninInformationServlet extends HttpServlet {
         //获取用户省份number
         String user_privince  = request.getParameter("privince");
         this.setPrivince(user_privince);
-        System.out.println(user_privince);
+        //System.out.println(user_privince);
         //获取用户验证码
         String verify_code = request.getParameter("verify_code");
         this.setVerify_code(verify_code);
@@ -141,7 +142,9 @@ public class GetSigninInformationServlet extends HttpServlet {
         boolean keyVI = this.isNull(this.getSex());
         //判断验证码
         boolean keyVII = this.isNull(this.getV_code());
-        if (keyI && keyII && keyIII && keyIV && keyV && keyVI && keyVII) {
+        if (keyI || keyII || keyIII || keyIV || keyV || keyVI || keyVII) {
+            returnKey = false;
+        } else {
             returnKey = true;
         }
         return returnKey;
@@ -154,12 +157,12 @@ public class GetSigninInformationServlet extends HttpServlet {
      */
     public boolean isNull(String value) {
         boolean returnKey = false;
-        if (value.isEmpty()) {
+        /*if (value.isEmpty()) {
             returnKey = true;
         }
         if (value.equals("")) {
             returnKey = true;
-        }
+        }*/
         if (value == "") {
             returnKey = true;
         }
@@ -219,7 +222,7 @@ public class GetSigninInformationServlet extends HttpServlet {
         //密码哈希
         this.setPasswordI(this.getPasswordII().hashCode() + "");
         //省份转数字
-        this.setPrivince(new GetProviceNumber().getProviceNumber(this.getPrivince()));
+        //this.setPrivince(new GetProviceNumber().getProviceNumber(this.getPrivince()));
         //性别
         String user_sex = this.getSex();
         if (user_sex.equals("0")) {
@@ -265,6 +268,17 @@ public class GetSigninInformationServlet extends HttpServlet {
     public void saveSession(HttpServletRequest request){
         HttpSession httpSession = request.getSession();
         httpSession.setAttribute("new_user_id", this.getUser_id());
+    }
+
+    /**
+     * 为降低程序耦合性 ， 多出来的工序
+     * @param number
+     * @throws SQLException
+     * @throws ClassNotFoundException
+     */
+    public String provinceNumberToProvinceName(String number) throws SQLException, ClassNotFoundException {
+        GetProvinces getProvinces = new GetProvinces();
+        return getProvinces.getPrivinceByNumber(number);
     }
 
     public String getEmail() {
@@ -352,7 +366,10 @@ public class GetSigninInformationServlet extends HttpServlet {
     }
 
     public void setUser_id() throws SQLException, ClassNotFoundException {
-        createID lpCreateID = new createID(this.getPrivince(), this.getSex());
+        //System.out.println("省份名称：" + this.getPrivince());
+        //为降低程序耦合性： 多一道工序
+        //省份编号-》省份名称
+        createID lpCreateID = new createID(this.provinceNumberToProvinceName(this.getPrivince()), this.getSex());
         this.user_id = lpCreateID.getID();
     }
 

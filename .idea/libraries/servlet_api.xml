@@ -2,6 +2,7 @@
   <library name="servlet-api">
     <CLASSES>
       <root url="jar://$USER_HOME$/lib/servlet-api.jar!/" />
+      <root url="jar://E:/jre/servlet-api.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
