@@ -23,4 +23,14 @@
         <servlet-name>VerifyCodeServlet</servlet-name>
         <url-pattern>/Tools/VerifyCode/VerifyCodeServlet</url-pattern>
     </servlet-mapping>
+
+    <!--获取注册信息-->
+    <servlet>
+        <servlet-name>GetSigninInformationServlet</servlet-name>
+        <servlet-class>Signin.GetSigninInformationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetSigninInformationServlet</servlet-name>
+        <url-pattern>/Signin/GetSigninInformationServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

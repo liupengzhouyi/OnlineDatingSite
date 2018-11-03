@@ -55,7 +55,7 @@ public class GetLoginInformationServlet extends HttpServlet {
      */
     public void getSessionVeriftCode(HttpServletRequest request) {
         HttpSession httpSession = request.getSession();
-        this.setUser_verify_code_by_session((String) httpSession.getAttribute(""));
+        this.setUser_verify_code_by_session((String) httpSession.getAttribute("verify_code_server"));
     }
 
     /**

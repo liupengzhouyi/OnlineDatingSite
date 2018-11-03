@@ -5,21 +5,24 @@
   Time: 9:08 PM
   To change this template use File | Settings | File Templates.
 --%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.io.PrintWriter" %>
+<%@ page import="Signin.GetProvinces" %>
+<%@ page import="java.sql.SQLException" %>
 <html>
 <head>
     <title>在线交友网注册</title>
 </head>
 <body>
-<%
+<%--<%
     HttpSession httpSession = request.getSession();
     if (httpSession.isNew()) {
         httpSession.setAttribute("test", "test");
     } else {
         httpSession.setAttribute("test", "test");
     }
-%>
-<form action="/makefriend/GetUserInformationServlet" method="post">
+%>--%>
+<form action="/Signin/GetSigninInformationServlet" method="post">
     <table border="1">
         <tr>
             <th colspan="3">
@@ -84,9 +87,23 @@
             <td colspan="2">
                 <select name="privince">
                     <%
-                        getPrivices lpGetPrivices = new getPrivices();
-                        String[] strings = lpGetPrivices.getPrivices();
-                        String[] numbers = lpGetPrivices.getNumber();
+                        GetProvinces getProvinces = new GetProvinces();
+                        String[] strings = new String[0];
+                        try {
+                            strings = getProvinces.getPrivices();
+                        } catch (ClassNotFoundException e) {
+                            e.printStackTrace();
+                        } catch (SQLException e) {
+                            e.printStackTrace();
+                        }
+                        String[] numbers = new String[0];
+                        try {
+                            numbers = getProvinces.getNumber();
+                        } catch (ClassNotFoundException e) {
+                            e.printStackTrace();
+                        } catch (SQLException e) {
+                            e.printStackTrace();
+                        }
                         for (int i=0;i<strings.length;i++) {
                             String name = strings[i];
                             String number = numbers[i];
