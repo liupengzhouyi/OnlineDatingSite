@@ -3,9 +3,15 @@ package Tools.CreateUserNumber;
 
 import Tools.GetTime.GetNowTime;
 
+import java.sql.SQLException;
+
 public class createID {
 
-    public createID(String provice, String number) {
+    public createID(String provice) throws SQLException, ClassNotFoundException {
+
+
+        String number = new UpdateProviceNumber(provice).getNumber();
+
         String ID = null;
         //省份： 内蒙古自治区
         //第几个： 56
@@ -29,8 +35,6 @@ public class createID {
         //校验
         ID = new VerifyCode(ID).getID();
 
-        //System.out.println(ID);
-
         this.setID(ID);
     }
 
@@ -44,7 +48,7 @@ public class createID {
 
     private String ID = null;
 
-    public static void main(String[] args) {
-        System.out.print(new createID("内蒙古自治区", "0").getID());
+    public static void main(String[] args) throws SQLException, ClassNotFoundException {
+        System.out.print(new createID("内蒙古自治区").getID());
     }
 }
