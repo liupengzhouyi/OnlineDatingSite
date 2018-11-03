@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public class createID {
 
-    public createID(String provice) throws SQLException, ClassNotFoundException {
+    public createID(String provice, String sex) throws SQLException, ClassNotFoundException {
 
 
         String number = new UpdateProviceNumber(provice).getNumber();
@@ -30,7 +30,7 @@ public class createID {
         ID = addNumber.getID();
 
         //性别
-        ID = new AddSexNumber(ID, "男").getIDNumber();
+        ID = new AddSexNumber(ID, sex).getIDNumber();
 
         //校验
         ID = new VerifyCode(ID).getID();
@@ -49,6 +49,6 @@ public class createID {
     private String ID = null;
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
-        System.out.print(new createID("内蒙古自治区").getID());
+        System.out.print(new createID("内蒙古自治区", "女").getID());
     }
 }

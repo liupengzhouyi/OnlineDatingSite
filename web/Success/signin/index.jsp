@@ -17,7 +17,7 @@
 
 <%
     HttpSession httpSession = request.getSession();
-    String id = (String) httpSession.getAttribute("user_id");
+    String id = (String) httpSession.getAttribute("new_user_id");
 %>
 
 <h3>
@@ -25,6 +25,11 @@
         您的用户ID是:&nbsp;<%=id%>
     </ccenter>
 </h3>
-
+<hr>
+<h4>
+    <center>
+        <a href="/index.jsp">点我返回</a>
+    </center>
+</h4>
 </body>
 </html>

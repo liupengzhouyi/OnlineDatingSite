@@ -29,7 +29,7 @@
     </td>
   </tr>
 </table>
-<a href="/Login/index.jsp"><button type="button">登录</button></a>
+<a href="/Login/index.jsp"><button type="button">登录</button><</a>
 <a href="/Signin/index.jsp"><button type="button">注册</button></a>
 </body>
 </html>

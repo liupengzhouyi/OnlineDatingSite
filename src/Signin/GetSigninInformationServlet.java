@@ -1,5 +1,10 @@
 package Signin;
 
+import Tools.CreateUserNumber.GetProviceNumber;
+import Tools.CreateUserNumber.createID;
+import Tools.GetTime.GetNowTime;
+import Tools.LinkDatabase.linkDatabases;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -23,12 +28,37 @@ public class GetSigninInformationServlet extends HttpServlet {
             //校验数据
             this.verifyData(response);
             //转化数据
-            this.transformationData();
-            //生成用户ID
+            try {
+                this.transformationData();
+                //生成用户ID
+                try {
+                    this.setUser_id();
+                    //数据入库
+                    this.saveInformationIntoDatabase();
+                    //用户IDSession
+                    this.saveSession(request);
+                    //操作提示
+                    //页面跳转
+                    response.sendRedirect("/");
+                } catch (SQLException e) {
+                    //生产用户ID 出错
 
-            //数据入库
+                    e.printStackTrace();
+                } catch (ClassNotFoundException e) {
+                    //生成用户ID出错
 
-            //操作提示
+                    e.printStackTrace();
+                }
+            } catch (SQLException e) {
+                //省份转数字失败
+
+                e.printStackTrace();
+            } catch (ClassNotFoundException e) {
+                //省份转数字失败
+
+                e.printStackTrace();
+            }
+
         } else {
            //错误提示：数据输入不完整
 
@@ -185,11 +215,11 @@ public class GetSigninInformationServlet extends HttpServlet {
     /**
      * 转化数据
       */
-    public void transformationData() {
+    public void transformationData() throws SQLException, ClassNotFoundException {
         //密码哈希
         this.setPasswordI(this.getPasswordII().hashCode() + "");
         //省份转数字
-
+        this.setPrivince(new GetProviceNumber().getProviceNumber(this.getPrivince()));
         //性别
         String user_sex = this.getSex();
         if (user_sex.equals("0")) {
@@ -198,6 +228,43 @@ public class GetSigninInformationServlet extends HttpServlet {
             user_sex = "女";
         }
         this.setSex(user_sex);
+    }
+
+    /**
+     * 保存数据入库
+     * @throws ClassNotFoundException
+     * @throws SQLException
+     */
+    public void saveInformationIntoDatabase() throws ClassNotFoundException, SQLException {
+        String data = new GetNowTime().getDate();
+        String time = new GetNowTime().getTime();
+
+        String sql = "insert into user" +
+                "(user_id, user_name, user_password_value, user_email, " +
+                "user_sex, user_phone, user_privince, user_create_date," +
+                " user_create_time) " +
+                "values (" +
+                "\'" + this.getUser_id() + "\', " +
+                "\'" + this.getName() + "\', " +
+                "\'" + this.getPasswordI() + "\', " +
+                "\'" + this.getEmail() + "\', " +
+                "\'" + this.getSex() + "\', " +
+                "\'" + this.getPhone() + "\', " +
+                "\'" + this.getPrivince() + "\', " +
+                "\'" + data + "\', " +
+                "\'" + time + "\');";
+
+        linkDatabases lpLinkDatabases = new linkDatabases();
+        lpLinkDatabases.saveData(sql);
+    }
+
+    /**
+     * 新ID保存到Session
+     * @param request
+     */
+    public void saveSession(HttpServletRequest request){
+        HttpSession httpSession = request.getSession();
+        httpSession.setAttribute("new_user_id", this.getUser_id());
     }
 
     public String getEmail() {
@@ -280,6 +347,15 @@ public class GetSigninInformationServlet extends HttpServlet {
         this.userID = userID;
     }
 
+    public String getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id() throws SQLException, ClassNotFoundException {
+        createID lpCreateID = new createID(this.getPrivince(), this.getSex());
+        this.user_id = lpCreateID.getID();
+    }
+
     //用户ID
     private String userID = null;
     //用户Email
@@ -300,4 +376,6 @@ public class GetSigninInformationServlet extends HttpServlet {
     private String verify_code = null;
     //用户验证码来自于 Session
     private String v_code = null;
+    //user_id
+    private String user_id = "";
 }
