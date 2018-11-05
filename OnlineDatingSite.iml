@@ -22,5 +22,9 @@
     <orderEntry type="library" exported="" name="Tomcat 9" level="project" />
     <orderEntry type="library" exported="" name="mysql-connector-java-5.1.47-bin" level="project" />
     <orderEntry type="library" exported="" name="servlet-api" level="project" />
+    <orderEntry type="library" exported="" name="commons-dbcp2-2.5" level="project" />
+    <orderEntry type="library" exported="" name="commons-dbutils-1" level="project" />
+    <orderEntry type="library" exported="" name="mysql-connector-java-5.1.39-bin" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Tomcat " level="application_server_libraries" />
   </component>
 </module>
