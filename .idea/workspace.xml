@@ -7,9 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7402b093-bb6d-4217-8041-c55d166f3b98" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AddFriend/FindFriend/IsMyFriend.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnlineDatingSite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineDatingSite.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OnlineDatingSite/Tools/LinkDatabase/linkDatabases.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnlineDatingSite/Tools/LinkDatabase/linkDatabases.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddFriend/FindFriend/FindFriend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddFriend/FindFriend/FindFriend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddFriend/GetAddFriendInformationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddFriend/GetAddFriendInformationServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tools/GetTime/getNowTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tools/LinkDatabase/linkDatabases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tools/LinkDatabase/linkDatabases.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,51 +76,71 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="3" />
+          <entry key="java" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="3" />
+          <entry key="JAVA" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="12" />
+          <entry key="java" value="1236" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12" />
+          <entry key="JAVA" value="1236" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Signin/GetSigninInformationServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1230">
-              <caret line="89" column="18" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/AddFriend/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AddFriend/GetAddFriendInformationServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+            <state relative-caret-position="465">
+              <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+              <folding>
+                <element signature="e#1995#1996#0" expanded="true" />
+                <element signature="e#2026#2027#0" expanded="true" />
+                <element signature="e#2074#2075#0" expanded="true" />
+                <element signature="e#2114#2115#0" expanded="true" />
+                <element signature="e#2151#2152#0" expanded="true" />
+                <element signature="e#2184#2185#0" expanded="true" />
+                <element signature="e#2236#2237#0" expanded="true" />
+                <element signature="e#2280#2281#0" expanded="true" />
+                <element signature="e#2311#2312#0" expanded="true" />
+                <element signature="e#2338#2339#0" expanded="true" />
+                <element signature="e#2378#2379#0" expanded="true" />
+                <element signature="e#2410#2411#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AddFriend/FindFriend/IsMyFriend.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#90#91#0" expanded="true" />
+                <element signature="e#120#121#0" expanded="true" />
+                <element signature="e#166#167#0" expanded="true" />
+                <element signature="e#204#205#0" expanded="true" />
+                <element signature="e#240#241#0" expanded="true" />
+                <element signature="e#272#273#0" expanded="true" />
+                <element signature="e#322#323#0" expanded="true" />
+                <element signature="e#364#365#0" expanded="true" />
+                <element signature="e#1660#1661#0" expanded="true" />
+                <element signature="e#1691#1692#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,9 +171,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AddFriend/FindFriend/FindFriend.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="273">
+              <caret line="34" column="9" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="34" selection-end-column="9" />
               <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#197#198#0" expanded="true" />
+                <element signature="e#227#228#0" expanded="true" />
+                <element signature="e#170#171#0" expanded="true" />
+                <element signature="e#212#213#0" expanded="true" />
                 <element signature="e#247#248#0" expanded="true" />
                 <element signature="e#278#279#0" expanded="true" />
                 <element signature="e#326#327#0" expanded="true" />
@@ -159,7 +188,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tools/LinkDatabase/linkDatabases.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tools/GetTime/GetNowTime.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="303">
@@ -254,7 +292,6 @@
         <option value="$PROJECT_DIR$/src/DatabaseInformation/CreateTable/my_friend.txt" />
         <option value="$PROJECT_DIR$/src/DatabaseInformation/CreateTable/create_user_number_information.txt" />
         <option value="$PROJECT_DIR$/src/DatabaseInformation/InitializationData/code.txt" />
-        <option value="$PROJECT_DIR$/src/Tools/LinkDatabase/linkDatabases.java" />
         <option value="$PROJECT_DIR$/src/Tools/CreateUserNumber/UpdateProviceNumber.java" />
         <option value="$PROJECT_DIR$/web/Success/signin/index.jsp" />
         <option value="$PROJECT_DIR$/src/Signin/GetProvinces.java" />
@@ -273,10 +310,12 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/AddFriend/JavaBean/appleFriend.java" />
         <option value="$PROJECT_DIR$/src/AddFriend/JavaBean/ApplyFriend.java" />
-        <option value="$PROJECT_DIR$/src/AddFriend/GetAddFriendInformationServlet.java" />
-        <option value="$PROJECT_DIR$/src/AddFriend/FindFriend/FindFriend.java" />
         <option value="$PROJECT_DIR$/src/Tools/GetTime/getNowTime.java" />
         <option value="$PROJECT_DIR$/src/Tools/GetTime/GetNowTime.java" />
+        <option value="$PROJECT_DIR$/src/Tools/LinkDatabase/linkDatabases.java" />
+        <option value="$PROJECT_DIR$/src/AddFriend/FindFriend/FindFriend.java" />
+        <option value="$PROJECT_DIR$/src/AddFriend/FindFriend/IsMyFriend.java" />
+        <option value="$PROJECT_DIR$/src/AddFriend/GetAddFriendInformationServlet.java" />
       </list>
     </option>
   </component>
@@ -331,26 +370,6 @@
             <path>
               <item name="OnlineDatingSite" type="b2602c69:ProjectViewProjectNode" />
               <item name="OnlineDatingSite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Tools" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OnlineDatingSite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OnlineDatingSite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Tools" type="462c0819:PsiDirectoryNode" />
-              <item name="CreateUserNumber" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OnlineDatingSite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OnlineDatingSite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Tools" type="462c0819:PsiDirectoryNode" />
-              <item name="GetTime" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OnlineDatingSite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OnlineDatingSite" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -376,7 +395,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541396059534" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541410547697" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -408,13 +427,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.liupengTomcat">
+  <component name="RunManager" selected="Application.IsMyFriend">
+    <configuration name="FindFriend" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AddFriend.FindFriend.FindFriend" />
+      <module name="OnlineDatingSite" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AddFriend.FindFriend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GetProvinces" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Signin.GetProvinces" />
       <module name="OnlineDatingSite" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Signin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IsMyFriend" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AddFriend.FindFriend.IsMyFriend" />
+      <module name="OnlineDatingSite" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AddFriend.FindFriend.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -590,9 +635,13 @@
       <item itemvalue="Application.GetProvinces" />
       <item itemvalue="Application.test" />
       <item itemvalue="Application.createID" />
+      <item itemvalue="Application.FindFriend" />
+      <item itemvalue="Application.IsMyFriend" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IsMyFriend" />
+        <item itemvalue="Application.FindFriend" />
         <item itemvalue="Application.createID" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.GetProvinces" />
@@ -614,7 +663,7 @@
       <workItem from="1541307774677" duration="471000" />
       <workItem from="1541335815718" duration="1939000" />
       <workItem from="1541399582430" duration="2191000" />
-      <workItem from="1541407541596" duration="352000" />
+      <workItem from="1541407541596" duration="3213000" />
     </task>
     <task id="LOCAL-00001" summary="小工具: 验证码 V 1.0.1">
       <created>1541165430693</created>
@@ -770,11 +819,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541338770275</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="添加好友 V1.0.5">
+      <created>1541407913067</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1541407913067</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35529000" />
+    <option name="totallyTimeSpent" value="38390000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -790,7 +846,7 @@
       <window_info id="Web" order="7" sideWeight="0.5006878" side_tool="true" weight="0.25572005" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32737276" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32611465" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -840,12 +896,10 @@
     <MESSAGE value="注册 V1.0.5" />
     <MESSAGE value="添加好友 V1.0.2" />
     <MESSAGE value="添加好友 V1.0.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加好友 V1.0.3" />
+    <MESSAGE value="添加好友 V1.0.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加好友 V1.0.5" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Tools/Password/Encryption.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tools/Password/password.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1006,13 +1060,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tools/LinkDatabase/linkDatabases.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/Signin/temp_index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="620">
@@ -1053,13 +1100,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddFriend/GetAddFriendInformationServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1115,19 +1155,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddFriend/FindFriend/FindFriend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tools/GetTime/GetNowTime.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
@@ -1140,6 +1167,72 @@
             <element signature="e#131#132#0" expanded="true" />
             <element signature="e#391#392#0" expanded="true" />
             <element signature="e#421#422#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tools/LinkDatabase/linkDatabases.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AddFriend/FindFriend/FindFriend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="34" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#197#198#0" expanded="true" />
+            <element signature="e#227#228#0" expanded="true" />
+            <element signature="e#170#171#0" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AddFriend/FindFriend/IsMyFriend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#90#91#0" expanded="true" />
+            <element signature="e#120#121#0" expanded="true" />
+            <element signature="e#166#167#0" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#1660#1661#0" expanded="true" />
+            <element signature="e#1691#1692#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AddFriend/GetAddFriendInformationServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+          <folding>
+            <element signature="e#1995#1996#0" expanded="true" />
+            <element signature="e#2026#2027#0" expanded="true" />
+            <element signature="e#2074#2075#0" expanded="true" />
+            <element signature="e#2114#2115#0" expanded="true" />
+            <element signature="e#2151#2152#0" expanded="true" />
+            <element signature="e#2184#2185#0" expanded="true" />
+            <element signature="e#2236#2237#0" expanded="true" />
+            <element signature="e#2280#2281#0" expanded="true" />
+            <element signature="e#2311#2312#0" expanded="true" />
+            <element signature="e#2338#2339#0" expanded="true" />
+            <element signature="e#2378#2379#0" expanded="true" />
+            <element signature="e#2410#2411#0" expanded="true" />
           </folding>
         </state>
       </provider>
