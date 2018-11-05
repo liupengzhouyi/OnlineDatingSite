@@ -14,24 +14,12 @@
 <table border="1">
     <tr>
         <th>
-            好友账号
-        </th>
-        <th>
-            同意
-        </th>
-        <th>
-            拒绝
+            我的好友
         </th>
     </tr>
     <tr>
         <td>
 
-        </td>
-        <td>
-            <a href="/AddFriend/OperationApplication/OperationApplyServlet?apply_id=11&operation=1"><button>同意</button></a>
-        </td>
-        <td>
-            <a href="/AddFriend/OperationApplication/OperationApplyServlet?apply_id=11&operation=0"><button>拒绝</button></a>
         </td>
     </tr>
 </table>

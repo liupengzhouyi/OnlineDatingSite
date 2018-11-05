@@ -5,9 +5,9 @@ import Tools.LinkDatabase.linkDatabases;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class selectMyFriend {
+public class SelectFriend {
 
-    public selectMyFriend(String user_id) {
+    public SelectFriend(String user_id) {
         this.setUser_id(user_id);
     }
 
