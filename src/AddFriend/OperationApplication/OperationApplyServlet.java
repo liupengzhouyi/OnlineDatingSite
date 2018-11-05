@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.sql.SQLException;
 
 @WebServlet(name = "OperationApplyServlet")
 public class OperationApplyServlet extends HttpServlet {
@@ -39,7 +40,17 @@ public class OperationApplyServlet extends HttpServlet {
         //操作数据
 
         //消除最新状态
+        try {
+            new Unupdate(this.getApply_id());
+        } catch (SQLException e) {
+            //数据库连接失败，失败地点：消除好友申请最新状态
 
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            //数据库连接失败，失败地点：消除好友申请最新状态
+
+            e.printStackTrace();
+        }
     }
 
     //操作数据

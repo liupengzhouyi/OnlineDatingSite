@@ -100,8 +100,8 @@ public class AgreeApply {
 
     public void setNewSql() {
         //第一次
-        this.newSql = "insert into apply_return(return_id, my_id, friend_id, can_make) " +
-                "values (1, \'" + this.getMy_id() + "\', \'" + this.getFriend_id() + "\', 1);";
+        /*this.newSql = "insert into apply_return(return_id, my_id, friend_id, can_make) " +
+                "values (1, \'" + this.getMy_id() + "\', \'" + this.getFriend_id() + "\', 1);";*/
         //第1+n次
         this.newSql = "insert into apply_return(my_id, friend_id, can_make) " +
                 "values (\'" + this.getMy_id() + "\', \'" + this.getFriend_id() + "\', 1);";
