@@ -75,6 +75,15 @@
         <url-pattern>/Friends/SelectFriends/SelectMyFriendsServlet</url-pattern>
     </servlet-mapping>
 
+    <!--获取聊天信息-->
+    <servlet>
+        <servlet-name>GetChatInformationServlet</servlet-name>
+        <servlet-class>Chat.GetChatInformationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetChatInformationServlet</servlet-name>
+        <url-pattern>/Chat/GetChatInformationServlet</url-pattern>
+    </servlet-mapping>
 
 
 
