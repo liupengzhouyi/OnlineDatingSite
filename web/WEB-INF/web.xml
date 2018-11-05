@@ -44,7 +44,15 @@
         <url-pattern>/AddFriend/GetAddFriendInformationServlet</url-pattern>
     </servlet-mapping>
 
-
+    <!--获取数据库信息-->
+    <servlet>
+        <servlet-name>GetApplyFriendInformationServlet</servlet-name>
+        <servlet-class>AddFriend.GetApplyFriendInformation.GetApplyFriendInformationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetApplyFriendInformationServlet</servlet-name>
+        <url-pattern>/AddFriend/GetApplyFriendInformation/GetApplyFriendInformationServlet</url-pattern>
+    </servlet-mapping>
 
 
 

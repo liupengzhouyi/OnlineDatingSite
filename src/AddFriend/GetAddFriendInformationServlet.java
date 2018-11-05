@@ -3,6 +3,7 @@ package AddFriend;
 import AddFriend.FindFriend.FindFriend;
 import AddFriend.FindFriend.IsMyFriend;
 import AddFriend.JavaBean.ApplyFriend;
+import Tools.LinkDatabase.linkDatabases;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -38,9 +39,13 @@ public class GetAddFriendInformationServlet extends HttpServlet {
                     } else {
                         //没有这个好友
                         //准备数据哭语句
-                        String sql = "";
+                        //好友申请SQL
+                        String sqlI = "";
+                        //好友申请通知好SQL
+                        String sqlII = "";
                         //发送添加好友请求
-
+                        this.saveData(sqlI);
+                        this.saveData(sqlII);
                     }
                 } else {
                     //没有这个账号
@@ -96,6 +101,18 @@ public class GetAddFriendInformationServlet extends HttpServlet {
         }
         return returnKey;
     }
+
+    /**
+     * 执行SQL语句，保存数据
+     * @param sql
+     * @throws ClassNotFoundException
+     * @throws SQLException
+     */
+    public void saveData(String sql) throws ClassNotFoundException, SQLException {
+        linkDatabases lpLinkDatabases = new linkDatabases();
+        lpLinkDatabases.saveData(sql);
+    }
+
 
     public String getFriendId() {
         return friendId;
