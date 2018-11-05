@@ -44,7 +44,7 @@ public class GetAddFriendInformationServlet extends HttpServlet {
                         //好友申请通知好SQL
                         String sqlII = "";
                         //发送添加好友请求
-                        this.saveData(sqlI);
+                        //this.saveData(sqlI);
                         this.saveData(sqlII);
                     }
                 } else {

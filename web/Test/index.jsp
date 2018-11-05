@@ -11,6 +11,29 @@
     <title>Title</title>
 </head>
 <body>
+<table>
+    <tr>
+        <th>
+            好友账号
+        </th>
+        <th>
+            同意
+        </th>
+        <th>
+            拒绝
+        </th>
+    </tr>
+    <tr>
+        <td>
 
+        </td>
+        <td>
+            <a href="/"><button>同意</button></a>
+        </td>
+        <td>
+            <a href="/"><button>拒绝</button></a>
+        </td>
+    </tr>
+</table>
 </body>
 </html>
