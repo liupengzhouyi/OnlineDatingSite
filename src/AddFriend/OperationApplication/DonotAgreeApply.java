@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public class DonotAgreeApply {
 
-    public DonotAgreeApply() throws SQLException, ClassNotFoundException {
+    public DonotAgreeApply(String apply_id) throws SQLException, ClassNotFoundException {
         //初始化
         init();
         //获取好友申请ID

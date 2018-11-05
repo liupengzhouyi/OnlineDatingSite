@@ -15,7 +15,19 @@ public class OperationApplyServlet extends HttpServlet {
         //初始化
         this.init(request);
         //操作好友申请
-        this.getOperation();
+        try {
+            this.doOperation();
+            //消除最新状态
+            this.unupdate();
+        } catch (SQLException e) {
+            //数据添加申请好友信息出错
+
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            //数据添加申请好友信息出错
+
+            e.printStackTrace();
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -37,9 +49,23 @@ public class OperationApplyServlet extends HttpServlet {
         this.setApply_id(request.getParameter("apply_id"));
         //获取操作态度
         this.setOperation(request.getParameter("operation"));
-        //操作数据
+    }
 
-        //消除最新状态
+    //操作数据
+    public void doOperation() throws SQLException, ClassNotFoundException {
+        if (this.getOperation().equals("1")) {
+            //同意好友申请
+            new AgreeApply(this.getApply_id());
+        } else {
+            //不同意好友申请
+            new DonotAgreeApply(this.getApply_id());
+        }
+    }
+
+    /**
+     * 消除最新状态
+     */
+    public void unupdate() {
         try {
             new Unupdate(this.getApply_id());
         } catch (SQLException e) {
@@ -50,17 +76,6 @@ public class OperationApplyServlet extends HttpServlet {
             //数据库连接失败，失败地点：消除好友申请最新状态
 
             e.printStackTrace();
-        }
-    }
-
-    //操作数据
-    public void doOperation() {
-        if (this.getOperation().equals("1")) {
-            //同意好友申请
-
-        } else {
-            //不同意好友申请
-
         }
     }
 
