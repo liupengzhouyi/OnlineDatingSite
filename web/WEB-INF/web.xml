@@ -65,5 +65,17 @@
         <url-pattern>/AddFriend/OperationApplication/OperationApplyServlet</url-pattern>
     </servlet-mapping>
 
+    <!--获取我的好友列表-->
+    <servlet>
+        <servlet-name>SelectMyFriendsServlet</servlet-name>
+        <servlet-class>Friends.SelectFriends.SelectMyFriendsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SelectMyFriendsServlet</servlet-name>
+        <url-pattern>/Friends/SelectFriends/SelectMyFriendsServlet</url-pattern>
+    </servlet-mapping>
+
+
+
 
 </web-app>
