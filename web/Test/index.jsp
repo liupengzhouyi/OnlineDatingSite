@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<table>
+<table border="1">
     <tr>
         <th>
             好友账号
@@ -28,10 +28,10 @@
 
         </td>
         <td>
-            <a href="/"><button>同意</button></a>
+            <a href="/AddFriend/OperationApplication/OperationApplyServlet?apply_id=11&operation=1"><button>同意</button></a>
         </td>
         <td>
-            <a href="/"><button>拒绝</button></a>
+            <a href="/AddFriend/OperationApplication/OperationApplyServlet?apply_id=11&operation=0"><button>拒绝</button></a>
         </td>
     </tr>
 </table>

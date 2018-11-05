@@ -89,10 +89,35 @@ public class GetApplyFriendInformationServlet extends HttpServlet {
         //准备SQL语句
         String sql = "select * from apply_for_friend where friend_number = \'" + user_id + "\';";
         ResultSet resultSet = lpLinkDatabases.getInformation(sql);
+            printWriter.println("<table border=\"1\">\n" +
+                                "    <tr>\n" +
+                                "        <th>\n" +
+                                "            好友账号\n" +
+                                "        </th>\n" +
+                                "        <th>\n" +
+                                "            同意\n" +
+                                "        </th>\n" +
+                                "        <th>\n" +
+                                "            拒绝\n" +
+                                "        </th>\n" +
+                                "    </tr>");
         while(resultSet.next()) {
-            int temp_apply_id = resultSet.getInt("");
-            String temp_apply_my_id = resultSet.getString("");
-            printWriter.println("");
+            //申请编号
+            int temp_apply_id = resultSet.getInt("apply_id");
+            //申请好友ID
+            String temp_apply_my_id = resultSet.getString("my_number");
+            printWriter.println("    <tr>\n" +
+                                "        <td>\n" +
+                                temp_apply_my_id +
+                                "        </td>\n" +
+                                "        <td>\n" +
+                                "            <a href=\"/AddFriend/OperationApplication/OperationApplyServlet?apply_id=" + temp_apply_id + "&operation=1\"><button>同意</button></a>\n" +
+                                "        </td>\n" +
+                                "        <td>\n" +
+                                "            <a href=\"/AddFriend/OperationApplication/OperationApplyServlet?apply_id=" + temp_apply_id + "&operation=0\"><button>拒绝</button></a>\n" +
+                                "        </td>\n" +
+                                "    </tr>");
         }
+            printWriter.println("</table>");
     }
 }

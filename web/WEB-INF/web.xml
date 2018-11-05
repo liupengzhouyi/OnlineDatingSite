@@ -55,6 +55,15 @@
     </servlet-mapping>
 
 
+    <!--操作好友申请-->
+    <servlet>
+        <servlet-name>OperationApplyServlet</servlet-name>
+        <servlet-class>AddFriend.OperationApplication.OperationApplyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OperationApplyServlet</servlet-name>
+        <url-pattern>/AddFriend/OperationApplication/OperationApplyServlet</url-pattern>
+    </servlet-mapping>
 
 
 </web-app>
