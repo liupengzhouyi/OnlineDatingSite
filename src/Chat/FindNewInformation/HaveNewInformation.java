@@ -25,15 +25,24 @@ public class HaveNewInformation {
 
     /**
      * 获取新信息数量
+     *
      * @throws ClassNotFoundException
      * @throws SQLException
      */
     public void getNewInformationNumber() throws ClassNotFoundException, SQLException {
+        //临时新信息提示
+        String temp = "";
+        //获取新的数据库连接对象
         linkDatabases lpLinkDatabses = new linkDatabases();
+        //获取我的新信息提示
         ResultSet resultSet = lpLinkDatabses.getInformation(this.getSql());
-        while(resultSet.next()) {
+        while (resultSet.next()) {
             //新信息数量 +1
             this.setNumber(this.getNumber() + 1);
+            //获取新信息编号
+            temp = resultSet.getInt("tie_id") + "";
+            //添加新信息
+            this.setTemp_string(this.getTemp_string() + temp + ",");
         }
     }
 
@@ -60,6 +69,34 @@ public class HaveNewInformation {
     public void setNumber(int number) {
         this.number = number;
     }
+
+    public String getTemp_string() {
+        return temp_string;
+    }
+
+    public void setTemp_string(String temp_string) {
+        this.temp_string = temp_string;
+    }
+
+    /**
+     * 获取新信息的编号
+     * @return
+     */
+    public String[] getTies() {
+        return ties;
+    }
+
+    /**
+     * 设置新信息编号
+     */
+    public void setTies() {
+        this.ties = this.getTemp_string().split(",");
+    }
+
+    //获取新信息编号的临时储存地址
+    private String temp_string = "";
+    //储存新信息编号
+    private String[] ties = null;
 
     private String sql = "";
 
