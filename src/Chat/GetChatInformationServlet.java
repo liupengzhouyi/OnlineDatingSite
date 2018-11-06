@@ -48,7 +48,8 @@ public class GetChatInformationServlet extends HttpServlet {
         //获取当前Session对象
         HttpSession httpSession = request.getSession();
         this.setMy_id((String) httpSession.getAttribute("user_id"));
-        this.setFriend_id(request.getParameter("friend_id"));
+        this.setFriend_id((String)httpSession.getAttribute("friend_id"));
+        //this.setFriend_id(request.getParameter("friend_id"));
         this.setChat(request.getParameter("charInformation"));
     }
 

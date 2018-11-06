@@ -64,7 +64,7 @@ public class ChatServlet extends HttpServlet {
         for (int i=0;i<this.getFriends().length;i++) {
             printWriter.println("tr>\n" +
                                 "        <td>\n" +
-                                "            <a href=\"/\">\n" +
+                                "            <a href=\"/Chat/ChatWith.jsp?friend_id=" + this.getFriends() + "\">\n" +
                                                 this.getFriends()[i] +
                                 "            </a>\n" +
                                 "        </td>\n" +

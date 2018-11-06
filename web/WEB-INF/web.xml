@@ -115,4 +115,13 @@
         <url-pattern>/Chat/FindFriendToChat/ChatServlet</url-pattern>
     </servlet-mapping>
 
+    <!--保存聊天信息-->
+    <servlet>
+        <servlet-name>SaveChatServlet</servlet-name>
+        <servlet-class>Chat.SaveChatInformation.SaveChatServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SaveChatServlet</servlet-name>
+        <url-pattern>/Chat/SaveChatInformation/SaveChatServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
