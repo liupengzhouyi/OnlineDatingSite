@@ -60,7 +60,7 @@ public class ShowNewInformationTieServlet extends HttpServlet {
     public void printInformation(PrintWriter printWriter) {
         printWriter.println("<table border=\"1\">\n" +
                             "    <tr>\n" +
-                            "        <th>\n" +
+                            "        <th colspan=\"2\">\n" +
                             "            新信息提示\n" +
                             "        </th>\n" +
                             "    </tr>");
@@ -68,7 +68,10 @@ public class ShowNewInformationTieServlet extends HttpServlet {
         for (int i = 0;i<this.getNumber();i++) {
             number = this.getTies()[i];
             printWriter.println("<tr>\n" +
-                                "        <td>\n" +
+                                "        <td colspan=\"1\">\n" +
+                                             number +
+                                "        </td>\n" +
+                                "        <td colspan=\"1\">\n" +
                                 "            <a href=\"/\"><button>查看</button></a>\n" +
                                 "        </td>\n" +
                                 "    </tr>");

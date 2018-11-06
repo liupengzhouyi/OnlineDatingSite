@@ -18,10 +18,10 @@
         </th>
     </tr>
     <tr>
-        <td>
+        <td colspan="1">
 
         </td>
-        <td>
+        <td colspan="1">
             <a href="/"><button>查看</button></a>
         </td>
     </tr>

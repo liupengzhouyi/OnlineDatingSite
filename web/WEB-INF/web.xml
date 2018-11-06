@@ -95,4 +95,14 @@
         <url-pattern>/Chat/GetNewInformation/ShowNewInformationTieServlet</url-pattern>
     </servlet-mapping>
 
+    <!--显示聊天信息-->
+    <servlet>
+        <servlet-name>ShowChatInformationServlet</servlet-name>
+        <servlet-class>Chat.ShowNewInformation.ShowChatInformationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowChatInformationServlet</servlet-name>
+        <url-pattern>/Chat/ShowNewInformation/ShowChatInformationServlet</url-pattern>
+    </servlet-mapping>
+
 </web-app>
