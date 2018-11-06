@@ -11,6 +11,20 @@
     <title>Title</title>
 </head>
 <body>
+<table border="1">
+    <tr>
+        <th colspan="2">
+            新信息提示
+        </th>
+    </tr>
+    <tr>
+        <td>
 
+        </td>
+        <td>
+            <a href="/"><button>查看</button></a>
+        </td>
+    </tr>
+</table>
 </body>
 </html>

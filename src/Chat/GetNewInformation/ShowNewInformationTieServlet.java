@@ -21,8 +21,8 @@ public class ShowNewInformationTieServlet extends HttpServlet {
         this.init(request);
         //获取PrintWirter对象
         PrintWriter printWriter = response.getWriter();
-
-
+        //输出提示信息
+        this.printInformation(printWriter);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -51,6 +51,29 @@ public class ShowNewInformationTieServlet extends HttpServlet {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+    }
+
+    /**
+     * 输出新信息通知编号
+     * @param printWriter
+     */
+    public void printInformation(PrintWriter printWriter) {
+        printWriter.println("<table border=\"1\">\n" +
+                            "    <tr>\n" +
+                            "        <th>\n" +
+                            "            新信息提示\n" +
+                            "        </th>\n" +
+                            "    </tr>");
+        String number = "";
+        for (int i = 0;i<this.getNumber();i++) {
+            number = this.getTies()[i];
+            printWriter.println("<tr>\n" +
+                                "        <td>\n" +
+                                "            <a href=\"/\"><button>查看</button></a>\n" +
+                                "        </td>\n" +
+                                "    </tr>");
+        }
+            printWriter.println("</table>");
     }
 
     public int getNumber() {
