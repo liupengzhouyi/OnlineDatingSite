@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.SQLException;
 
 @WebServlet(name = "ChatServlet")
@@ -22,7 +23,10 @@ public class ChatServlet extends HttpServlet {
         //获取好友列表
         try {
             this.setFriends();
+            //获取PrintWirter对象
+            PrintWriter printWriter = response.getWriter();
             //输出列表
+            this.listFriend(printWriter);
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
@@ -44,6 +48,29 @@ public class ChatServlet extends HttpServlet {
         HttpSession httpSession = request.getSession();
         //设置用户的ID
         this.setMy_id((String) httpSession.getAttribute("user_id"));
+    }
+
+    /**
+     * 对好友列表进行列表
+     * @param printWriter
+     */
+    public void listFriend(PrintWriter printWriter) {
+        printWriter.println("<table border=\"1\">\n" +
+                            "    <tr>\n" +
+                            "        <th colspan=\"2\">\n" +
+                            "            新信息提示\n" +
+                            "        </th>\n" +
+                            "    </tr>");
+        for (int i=0;i<this.getFriends().length;i++) {
+            printWriter.println("tr>\n" +
+                                "        <td>\n" +
+                                "            <a href=\"/\">\n" +
+                                                this.getFriends()[i] +
+                                "            </a>\n" +
+                                "        </td>\n" +
+                                "    </tr>");
+        }
+        printWriter.println("</table>");
     }
 
     public String[] getFriends() {

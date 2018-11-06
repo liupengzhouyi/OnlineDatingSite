@@ -33,9 +33,9 @@ public class GetProviceNumber {
 
         for (String key : keySet
              ) {
-            System.out.print(key);
+            //System.out.print(key);
             Object i = proviceMap.get(key);
-            System.out.println(i.toString());
+            //System.out.println(i.toString());
         }
 
     }

@@ -13,43 +13,16 @@
 <body>
 <table border="1">
     <tr>
-        <th colspan="1">
-            <a href="">
-                <button>
-                    返回
-                </button>
-            </a>
-        </th>
         <th>
-
+            我的好友
         </th>
     </tr>
     <tr>
-        <th colspan="2">
-            账号&昵称
-        </th>
-    </tr>
-    <tr>
-        <td colspan="2">
-            数据
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2">
-            <textarea name="text" id="" cols="30" rows="10"></textarea>
-        </td>
-    </tr>
-    <tr>
-        <th colspan="1">
-            <button type="reset">重置</button>
-        </th>
-        <th colspan="1">
+        <td>
             <a href="/">
-                <button>
-                    回复
-                </button>
+
             </a>
-        </th>
+        </td>
     </tr>
 </table>
 </body>
