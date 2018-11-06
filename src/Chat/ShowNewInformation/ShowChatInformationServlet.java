@@ -15,6 +15,14 @@ import java.sql.SQLException;
 
 @WebServlet(name = "ShowChatInformationServlet")
 public class ShowChatInformationServlet extends HttpServlet {
+    /**
+     * 需要 用户账号
+     * 需要 所选条目
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //初始化函数
         this.init(request);

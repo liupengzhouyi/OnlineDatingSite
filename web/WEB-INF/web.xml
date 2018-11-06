@@ -105,4 +105,14 @@
         <url-pattern>/Chat/ShowNewInformation/ShowChatInformationServlet</url-pattern>
     </servlet-mapping>
 
+    <!--添加聊天信息-->
+    <servlet>
+        <servlet-name>ChatServlet</servlet-name>
+        <servlet-class>Chat.FindFriendToChat.ChatServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChatServlet</servlet-name>
+        <url-pattern>/Chat/FindFriendToChat/ChatServlet</url-pattern>
+    </servlet-mapping>
+
 </web-app>
