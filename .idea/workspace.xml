@@ -7,10 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7402b093-bb6d-4217-8041-c55d166f3b98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Chat/GetNewInformation/ShowNewInformationTieServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tools/GetTime/getNowTime.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,7 +65,7 @@
     <session id="-908347946">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
@@ -94,7 +92,7 @@
         <counts>
           <entry key="java" value="7719" />
           <entry key="jsp" value="130" />
-          <entry key="txt" value="177" />
+          <entry key="txt" value="182" />
           <entry key="xml" value="124" />
         </counts>
       </usages-collector>
@@ -102,7 +100,7 @@
         <counts>
           <entry key="JAVA" value="7713" />
           <entry key="JSP" value="130" />
-          <entry key="PLAIN_TEXT" value="177" />
+          <entry key="PLAIN_TEXT" value="182" />
           <entry key="RegExp" value="6" />
           <entry key="XML" value="124" />
         </counts>
@@ -434,7 +432,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541474425463" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541478184400" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -704,7 +702,7 @@
       <workItem from="1541399582430" duration="2191000" />
       <workItem from="1541407541596" duration="4088000" />
       <workItem from="1541412935001" duration="11558000" />
-      <workItem from="1541471438866" duration="3525000" />
+      <workItem from="1541471438866" duration="3563000" />
     </task>
     <task id="LOCAL-00001" summary="小工具: 验证码 V 1.0.1">
       <created>1541165430693</created>
@@ -965,17 +963,23 @@
       <option name="project" value="LOCAL" />
       <updated>1541473722602</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="聊天.获取新信息提示(1) V1.0.5">
+      <created>1541478174270</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1541478174270</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54348000" />
+    <option name="totallyTimeSpent" value="54386000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4955414" weight="0.22174536" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4955414" visible="true" weight="0.22174536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1015,7 +1019,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="关于 V 1.0.1" />
     <MESSAGE value="连接数据库成功 V 1.0.2" />
     <MESSAGE value="注册 V 1.0.3" />
     <MESSAGE value="数据库添加数据 V 1.0.2" />
@@ -1040,7 +1043,8 @@
     <MESSAGE value="聊天.保存聊天信息 V1.0.3" />
     <MESSAGE value="聊天.获取新信息数量 V1.0.4" />
     <MESSAGE value="聊天.获取新信息提示编号 V1.0.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="聊天.获取新信息提示编号 V1.0.5" />
+    <MESSAGE value="聊天.获取新信息提示(1) V1.0.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="聊天.获取新信息提示(1) V1.0.5" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/DatabaseInformation/CreateTable/add_friend.txt">
