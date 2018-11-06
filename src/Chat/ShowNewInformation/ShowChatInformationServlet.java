@@ -22,7 +22,7 @@ public class ShowChatInformationServlet extends HttpServlet {
         response.setContentType("");
         try {
             //获取信息
-            this.getInformation();
+            this.getDataInformation();
             //显示信息
             // 获取Printwriter对象
             PrintWriter printWriter = response.getWriter();
@@ -77,7 +77,7 @@ public class ShowChatInformationServlet extends HttpServlet {
      * @throws ClassNotFoundException
      * @throws SQLException
      */
-    public void getInformation() throws ClassNotFoundException, SQLException {
+    public void getDataInformation() throws ClassNotFoundException, SQLException {
         //获取数据库连接对象
         linkDatabases lpLinkDatabases = new linkDatabases();
         //获取数据
@@ -90,6 +90,8 @@ public class ShowChatInformationServlet extends HttpServlet {
                 this.setSql_id(resultSet.getString("char_id"));
                 //获取数据信息
                 this.setInformation(resultSet.getString("text"));
+                //获取好友
+                this.setFriend_id(resultSet.getString("friend_id"));
                 break;
             }
         }
@@ -100,7 +102,47 @@ public class ShowChatInformationServlet extends HttpServlet {
      * @param printWriter
      */
     public void showChatInformation(PrintWriter printWriter) {
-
+        printWriter.println("<table border=\"1\">\n" +
+                            "    <tr>\n" +
+                            "        <th colspan=\"1\">\n" +
+                            "            <a href=\"\">\n" +
+                            "                <button>\n" +
+                            "                    返回\n" +
+                            "                </button>\n" +
+                            "            </a>\n" +
+                            "        </th>\n" +
+                            "        <th>\n" +
+                            "\n" +
+                            "        </th>\n" +
+                            "    </tr>\n" +
+                            "    <tr>\n" +
+                            "        <th colspan=\"2\">\n" +
+                            this.getFriend_id() +
+                            "        </th>\n" +
+                            "    </tr>\n" +
+                            "    <tr>\n" +
+                            "        <td colspan=\"2\">\n" +
+                            this.getInformation() +
+                            "        </td>\n" +
+                            "    </tr>\n" +
+                            "    <tr>\n" +
+                            "        <td colspan=\"2\">\n" +
+                            "            <textarea name=\"text\" id=\"\" cols=\"30\" rows=\"10\"></textarea>\n" +
+                            "        </td>\n" +
+                            "    </tr>\n" +
+                            "    <tr>\n" +
+                            "        <th colspan=\"1\">\n" +
+                            "            <button type=\"reset\">重置</button>\n" +
+                            "        </th>\n" +
+                            "        <th colspan=\"1\">\n" +
+                            "            <a href=\"/\">\n" +
+                            "                <button>\n" +
+                            "                    回复\n" +
+                            "                </button>\n" +
+                            "            </a>\n" +
+                            "        </th>\n" +
+                            "    </tr>\n" +
+                            "</table>");
     }
 
     /**
@@ -167,8 +209,20 @@ public class ShowChatInformationServlet extends HttpServlet {
         this.updateSqlII = updateSqlII;
     }
 
+    public String getInformation() {
+        return information;
+    }
+
     public void setInformation(String information) {
         this.information = information;
+    }
+
+    public String getFriend_id() {
+        return friend_id;
+    }
+
+    public void setFriend_id(String friend_id) {
+        this.friend_id = friend_id;
     }
 
     //所要获取的语句编号
@@ -185,4 +239,6 @@ public class ShowChatInformationServlet extends HttpServlet {
     private String updateSqlII = "";
     //数据信息
     private String information = "";
+    //好友编号
+    private String friend_id = "";
 }
