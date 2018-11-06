@@ -9,7 +9,7 @@ public class FindFriend {
 
     public FindFriend(String friendId) {
         init(friendId);
-    }
+            }
 
     //初始化函数
     public void init(String friendId) {
