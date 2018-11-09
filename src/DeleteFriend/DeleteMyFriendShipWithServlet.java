@@ -12,9 +12,9 @@ import java.sql.SQLException;
 @WebServlet(name = "DeleteMyFriendShipWithServlet")
 public class DeleteMyFriendShipWithServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        //初始化函数
+        // 初 始 化 函数
         this.init(request);
-        //删除好友
+        // 删 除 好 友
         try {
             this.deleteFriend();
             //删除好友关系成功
