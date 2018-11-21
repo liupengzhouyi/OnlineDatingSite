@@ -27,7 +27,7 @@ public class FindFriend {
         //获取数据
         ResultSet resultSet = lpLinkDatabases.getInformation(sql);
         while(resultSet.next()) {
-            String user_id = resultSet.getString("");
+            String user_id = resultSet.getString("user_id");
             if (user_id.toString().equals(this.getFriendId().toString())) {
                 returnKey = true;
                 break;

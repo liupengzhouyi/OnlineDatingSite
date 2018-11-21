@@ -14,7 +14,7 @@
 <table border="1">
     <tr>
         <td>
-            <a href="">
+            <a href="/AddFriend/index.jsp">
                 添加好友
             </a>
         </td>
