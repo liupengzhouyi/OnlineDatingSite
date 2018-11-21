@@ -52,7 +52,10 @@ public class SelectMyFriendsServlet extends HttpServlet {
         doPost(request, response);
     }
 
-
+    /**
+     * 显示我的好友
+     * @param printWriter
+     */
     public void showMyFriendOnTable(PrintWriter printWriter) {
         //获取我的好友ID数据
         String[] strings = this.getFriends_id();
@@ -79,8 +82,10 @@ public class SelectMyFriendsServlet extends HttpServlet {
      */
     public void init(HttpServletRequest request) {
         HttpSession httpSession = request.getSession();
+        //获取用户账号
         String user_id = (String) httpSession.getAttribute("user_id");
         this.setUser_id(user_id);
+        System.out.println(this.getUser_id());
     }
 
 
