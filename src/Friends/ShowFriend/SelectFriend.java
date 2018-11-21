@@ -9,6 +9,7 @@ public class SelectFriend {
 
     public SelectFriend(String user_id) {
         this.setUser_id(user_id);
+        this.setSql();
     }
 
     /**
@@ -102,11 +103,22 @@ public class SelectFriend {
      */
     public void setSql() {
         this.sql = "select * from my_friends where " +
-                "(my_id = \'" + this.getUser_id() + "\' or friend_id = \'" + this.getUser_id()+ "\') " +
+                "(my_id = \'" + this.getUser_id() + "\' or my_friend_id = \'" + this.getUser_id()+ "\') " +
                 "and friendship = 1;";
+        System.out.println(this.sql);
     }
 
     public String user_id = null;
 
     private String sql = null;
+
+    public static void main(String[] args) {
+        try {
+            System.out.println(new SelectFriend("201811211800102").hasFriend());
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }

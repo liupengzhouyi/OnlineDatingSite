@@ -16,11 +16,10 @@ import java.sql.SQLException;
 public class SelectMyFriendsServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 设置编码格式
-        //response.setContentType("");
+        response.setContentType("text/html;charset=UTF-8");
         //初始化
         this.init(request);
         //获取PrintWiter对象
-        response.setContentType("text/html;charset=UTF-8");
         PrintWriter printWriter = response.getWriter();
 
         try {
@@ -31,7 +30,7 @@ public class SelectMyFriendsServlet extends HttpServlet {
                 //获取我的好友ID数据
                 this.setFriends_id();
                 //显示我的好友
-
+                this.showMyFriendOnTable(printWriter);
             } else {
                 //如果没有
                 //页面跳转，首页
