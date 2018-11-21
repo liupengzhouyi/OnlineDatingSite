@@ -1,5 +1,7 @@
 package Login;
 
+import Tools.LinkDatabase.linkDatabases;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -7,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.sql.SQLException;
 
 @WebServlet(name = "GetLoginInformationServlet")
 public class GetLoginInformationServlet extends HttpServlet {
@@ -16,6 +19,7 @@ public class GetLoginInformationServlet extends HttpServlet {
         //判断信息
         boolean key = this.veriftInformation();
         if (key) {
+            System.out.println("正确信息！进入主页");
             //Session 保存 用户ID
             this.saveUserIdToSession(request);
             //进入主页
@@ -23,7 +27,7 @@ public class GetLoginInformationServlet extends HttpServlet {
         } else {
             //跳转错误信息页面
             //登录过程出错
-
+            System.out.println("错误信息！进入错误页面");
         }
     }
 
@@ -69,10 +73,17 @@ public class GetLoginInformationServlet extends HttpServlet {
         //是否验证码正确
         boolean key_II = this.veriftVeriftCode();
         //是否密码正确
-        boolean key_III = this.veriftPassword();
-        //返回信息
-        if (key_I && key_II && key_III) {
-            returnKey = true;
+        boolean key_III = false;
+        try {
+            key_III = this.veriftPassword();
+            //返回信息
+            if (key_I && key_II && key_III) {
+                returnKey = true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
         }
         return returnKey;
     }
@@ -83,20 +94,23 @@ public class GetLoginInformationServlet extends HttpServlet {
      */
     public boolean veriftInput() {
         boolean returnKey = false;
+        /*System.out.println(this.getUser_id());
+        System.out.println(this.getUser_verify_code());
+        System.out.println(this.getUser_password());*/
         //判断用户ID输入
-        if (this.getUser_id().toString() == "") {
+        if (this.getUser_id() == "") {
             //没有输入用户ID
-
+            System.out.println("没有输入用户信息");
         } else {
             //判断用户验证码输入
             if (this.getUser_verify_code().toString() == "") {
                 //用户没有输入验证码
-
+                System.out.println("没有获取用户登录时候的验证码");
             } else {
                 //判断用户密码输入
-                if ((this.getUser_password() + "").toString() == "") {
+                if (this.getUser_password() == 0) {
                     //用户没有输入密码
-
+                    System.out.println("没有获取用户登录时候的密码");
                 } else {
                     returnKey = true;
                 }
@@ -115,7 +129,7 @@ public class GetLoginInformationServlet extends HttpServlet {
             returnKey = true;
         } else {
             //验证码错误
-
+            System.out.println("用户的验证码错误！");
         }
         return returnKey;
     }
@@ -124,13 +138,14 @@ public class GetLoginInformationServlet extends HttpServlet {
      * 判断用户输入的密码是否正确
      * @return
      */
-    public boolean veriftPassword() {
+    public boolean veriftPassword() throws SQLException, ClassNotFoundException {
         boolean returnKey = false;
-        /*if () {
-
+        GetUserPasswordValue getUserPasswordValue = new GetUserPasswordValue(this.getUser_id());
+        if ((this.getUser_password() + "").equals(getUserPasswordValue.getPasswordValue())) {
+            returnKey = true;
         } else {
-
-        }*/
+            returnKey = false;
+        }
         return returnKey;
     }
 

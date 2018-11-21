@@ -11,6 +11,55 @@
     <title>Title</title>
 </head>
 <body>
-
+<table border="1">
+    <tr>
+        <td>
+            <a href="">
+                添加好友
+            </a>
+        </td>
+        <td>
+            <a href="">
+                删除好友
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="">
+                聊天
+            </a>
+        </td>
+        <td>
+            <a href="">
+                我的好友
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="">
+                设置
+            </a>
+        </td>
+        <td>
+            <a href="">
+                退出
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="">
+                联系我们
+            </a>
+        </td>
+        <td>
+            <a href="/About/about.jsp">
+                关于
+            </a>
+        </td>
+    </tr>
+</table>
 </body>
 </html>
