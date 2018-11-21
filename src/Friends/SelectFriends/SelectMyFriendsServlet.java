@@ -20,6 +20,7 @@ public class SelectMyFriendsServlet extends HttpServlet {
         //初始化
         this.init(request);
         //获取PrintWiter对象
+        response.setContentType("text/html;charset=UTF-8");
         PrintWriter printWriter = response.getWriter();
 
         try {

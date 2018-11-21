@@ -38,7 +38,7 @@
             </a>
         </td>
         <td>
-            <a href="">
+            <a href="/Friends/SelectFriends/SelectMyFriendsServlet">
                 我的好友
             </a>
         </td>

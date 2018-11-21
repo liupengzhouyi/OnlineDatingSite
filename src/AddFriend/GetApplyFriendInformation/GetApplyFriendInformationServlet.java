@@ -22,6 +22,7 @@ public class GetApplyFriendInformationServlet extends HttpServlet {
         String user_id = (String) httpSession.getAttribute("user_id");
         System.out.println("用户ID：" + user_id);
         //获取PrintWriter对象
+        response.setContentType("text/html;charset=UTF-8");
         PrintWriter printWriter = response.getWriter();
 
         //判断是否拥有好友
@@ -69,7 +70,7 @@ public class GetApplyFriendInformationServlet extends HttpServlet {
         //连接数据库
         linkDatabases lpLinkDatabases = new linkDatabases();
         //准备SQL语句
-        String sql = "select * from apply_for_friend where my_number = \'" + user_id + "\';";
+        String sql = "select * from apply_for_friend where friend_number = \'" + user_id + "\';";
         ResultSet resultSet = lpLinkDatabases.getInformation(sql);
         while(resultSet.next()) {
             returnKey = true;
@@ -89,7 +90,7 @@ public class GetApplyFriendInformationServlet extends HttpServlet {
         //连接数据库
         linkDatabases lpLinkDatabases = new linkDatabases();
         //准备SQL语句
-        String sql = "select * from apply_for_friend where my_number = \'" + user_id + "\';";
+        String sql = "select * from apply_for_friend where friend_number = \'" + user_id + "\';";
         ResultSet resultSet = lpLinkDatabases.getInformation(sql);
             printWriter.println("<table border=\"1\">\n" +
                                 "    <tr>\n" +

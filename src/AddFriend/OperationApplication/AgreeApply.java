@@ -62,8 +62,9 @@ public class AgreeApply {
         String str = "select * from apply_for_friend where apply_id = \'" + this.getapply_id() + "\';";
         try {
             linkDatabases lpLinkDatabases = new linkDatabases();
-            ResultSet resultSet = lpLinkDatabases.getInformation(sql);
+            ResultSet resultSet = lpLinkDatabases.getInformation(str);
             while (resultSet.next()) {
+                System.out.println("数据库信息：" + resultSet.toString());
                 sqlI = resultSet.getString("my_sql");
                 //获取申请者ID
                 this.setMy_id(resultSet.getString("my_number"));
@@ -99,12 +100,10 @@ public class AgreeApply {
     }
 
     public void setNewSql() {
-        //第一次
-        /*this.newSql = "insert into apply_return(return_id, my_id, friend_id, can_make) " +
-                "values (1, \'" + this.getMy_id() + "\', \'" + this.getFriend_id() + "\', 1);";*/
-        //第1+n次
         this.newSql = "insert into apply_return(my_id, friend_id, can_make) " +
                 "values (\'" + this.getMy_id() + "\', \'" + this.getFriend_id() + "\', 1);";
+        System.out.println("添加好友关系语句：");
+        System.out.println(this.newSql);
     }
 
     private String apply_id = null;

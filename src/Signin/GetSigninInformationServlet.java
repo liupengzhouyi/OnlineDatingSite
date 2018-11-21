@@ -17,7 +17,7 @@ import java.sql.SQLException;
 @WebServlet(name = "GetSigninInformationServlet")
 public class GetSigninInformationServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        response.setContentType("text/html;charset=UTF-8");
         //初始化函数
         this.init();
         //赋值

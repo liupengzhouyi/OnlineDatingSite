@@ -70,11 +70,11 @@ public class OperationApplyServlet extends HttpServlet {
             new Unupdate(this.getApply_id());
         } catch (SQLException e) {
             //数据库连接失败，失败地点：消除好友申请最新状态
-
+            System.out.println("数据库连接失败，失败地点：消除好友申请最新状态");
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
             //数据库连接失败，失败地点：消除好友申请最新状态
-
+            System.out.println("数据库连接失败，失败地点：消除好友申请最新状态");
             e.printStackTrace();
         }
     }
