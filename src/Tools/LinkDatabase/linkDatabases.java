@@ -8,7 +8,7 @@ public class linkDatabases {
     //Window
     //static final String DB_URL = "jdbc:mysql://localhost:3306/database_for_java_web";
     //Mac
-    static final String DB_URL = "jdbc:mysql://localhost:3306/make_friend_by_java";
+    static final String DB_URL = "jdbc:mysql://localhost:3306/online_dating_site";
     // 数据库的用户名与密码，需要根据自己的设置
     static final String USERNAME = "root";
     static final String PASSWORD = "lp184126";
