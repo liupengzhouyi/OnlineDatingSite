@@ -14,6 +14,13 @@
 <table border="1">
     <tr>
         <td>
+            <a href="/AddFriend/GetApplyFriendInformation/GetApplyFriendInformationServlet">
+                新的好友申请消息
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
             <a href="/AddFriend/index.jsp">
                 添加好友
             </a>

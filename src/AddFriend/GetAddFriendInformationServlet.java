@@ -42,10 +42,10 @@ public class GetAddFriendInformationServlet extends HttpServlet {
                         //准备数据哭语句
                         //好友申请SQL
                         String sqlI = "insert into my_friends(friend_id, my_id, my_friend_id, my_name, my_friend_name, friend_date, friendship)" +
-                                " values (1, \'" + this.getMyId() + "\', \'" + this.getFriendId() + "\', \'\', \'" + this.getFriendName() + "\', now(), 1);";
+                                " values (1, \\\'" + this.getMyId() + "\\\', \\\'" + this.getFriendId() + "\\\', \'\', \\\'" + this.getFriendName() + "\\\', now(), 1);";
                         //好友申请通知好SQL
                         String sqlII = "insert into apply_for_friend(friend_number, my_number, my_sql, new_key) " +
-                                "values (\'" + this.getMyId() + "\', \'" + this.getFriendId() + "\', \'\\\'" + sqlI + "\\\', 1);";
+                                "values (\'" + this.getMyId() + "\', \'" + this.getFriendId() + "\', \'" + sqlI + "\', 1);";
 
                         ////////////////////////
                         System.out.println(sqlI);
@@ -53,7 +53,7 @@ public class GetAddFriendInformationServlet extends HttpServlet {
                         ////////////////////////
                         //发送添加好友请求
                         //this.saveData(sqlI);
-                        //this.saveData(sqlII);
+                        this.saveData(sqlII);
                         System.out.println("添加好友信息已发出，等待好友验证！");
                         response.sendRedirect("/");
                     }

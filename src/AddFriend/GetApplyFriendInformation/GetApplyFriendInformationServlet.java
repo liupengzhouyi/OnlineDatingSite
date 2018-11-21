@@ -20,7 +20,7 @@ public class GetApplyFriendInformationServlet extends HttpServlet {
         HttpSession httpSession = request.getSession();
         //获取用户ID
         String user_id = (String) httpSession.getAttribute("user_id");
-
+        System.out.println("用户ID：" + user_id);
         //获取PrintWriter对象
         PrintWriter printWriter = response.getWriter();
 
@@ -32,10 +32,11 @@ public class GetApplyFriendInformationServlet extends HttpServlet {
                 this.showMyApplyInformation(user_id, printWriter);
             } else {
                 //没有好友，页面跳转
+                System.out.println("没有好友申请！");
             }
         } catch (ClassNotFoundException e) {
             //数据库连接查询失败
-
+            System.out.println("数据库连接失败，在查询是否有好友进行好友申请的时候");
 
             e.printStackTrace();
         } catch (SQLException e) {
@@ -57,7 +58,7 @@ public class GetApplyFriendInformationServlet extends HttpServlet {
     }
 
     /**
-     * 判断是否有好友
+     * 判断是否有好友申请
       * @param user_id
      * @return
      * @throws ClassNotFoundException
@@ -68,10 +69,11 @@ public class GetApplyFriendInformationServlet extends HttpServlet {
         //连接数据库
         linkDatabases lpLinkDatabases = new linkDatabases();
         //准备SQL语句
-        String sql = "select * from apply_for_friend where friend_number = \'" + user_id + "\';";
+        String sql = "select * from apply_for_friend where my_number = \'" + user_id + "\';";
         ResultSet resultSet = lpLinkDatabases.getInformation(sql);
         while(resultSet.next()) {
             returnKey = true;
+            System.out.println("判断： 确定有好友申请");
         }
         return returnKey;
     }
@@ -87,7 +89,7 @@ public class GetApplyFriendInformationServlet extends HttpServlet {
         //连接数据库
         linkDatabases lpLinkDatabases = new linkDatabases();
         //准备SQL语句
-        String sql = "select * from apply_for_friend where friend_number = \'" + user_id + "\';";
+        String sql = "select * from apply_for_friend where my_number = \'" + user_id + "\';";
         ResultSet resultSet = lpLinkDatabases.getInformation(sql);
             printWriter.println("<table border=\"1\">\n" +
                                 "    <tr>\n" +
