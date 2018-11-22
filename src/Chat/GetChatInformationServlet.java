@@ -18,8 +18,8 @@ public class GetChatInformationServlet extends HttpServlet {
         //初始化函数
         init(request);
         //准备SQL语句
-        //  1。 聊天信息入库
-        //  2。 新信息提示入库
+        //  1。 聊天信息
+        //  2。 新信息提示
         this.createSQLI();
         this.createSQLII();
         //数据入库
@@ -30,7 +30,7 @@ public class GetChatInformationServlet extends HttpServlet {
 
             e.printStackTrace();
         } catch (SQLException e) {
-            //错误信息：数据入库出错，凑五地址：保存俩天信息
+            //错误信息：数据入库出错，错误地址：保存聊天信息
 
             e.printStackTrace();
         }
@@ -47,9 +47,11 @@ public class GetChatInformationServlet extends HttpServlet {
     public void init(HttpServletRequest request) {
         //获取当前Session对象
         HttpSession httpSession = request.getSession();
+        //获取用户ID
         this.setMy_id((String) httpSession.getAttribute("user_id"));
-        this.setFriend_id((String)httpSession.getAttribute("friend_id"));
-        //this.setFriend_id(request.getParameter("friend_id"));
+        //获取好友ID
+        this.setFriend_id((String)httpSession.getAttribute("friend_id_to_chat"));
+        //获取聊天信息
         this.setChat(request.getParameter("charInformation"));
     }
 
@@ -70,11 +72,9 @@ public class GetChatInformationServlet extends HttpServlet {
      */
     public void createSQLII() {
         //告诉朋友有新的信息
-        //第一次
-        String string = "insert into char_tie(tie_id, user_id, is_new) values (1, \'" + this.getFriend_id() + "\', 0);";
 
-        //第1+n次
-        //String string = "insert into char_tie(user_id, is_new) values (\'" + this.getFriend_id() + "\', 0);";
+
+        String string = "insert into char_tie(user_id, is_new) values (\'" + this.getFriend_id() + "\', 0);";
 
         this.setSqlII(string);
     }
