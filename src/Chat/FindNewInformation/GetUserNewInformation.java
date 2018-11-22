@@ -56,7 +56,7 @@ public class GetUserNewInformation {
      */
     public void createSql() {
         String str= "select * from char_information where friend_id = \'" + this.getUser_id() + "\' and is_new = 1;";
-
+        System.out.println(str);
         this.setSql(str);
     }
 

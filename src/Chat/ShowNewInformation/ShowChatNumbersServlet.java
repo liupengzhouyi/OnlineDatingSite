@@ -21,7 +21,7 @@ public class ShowChatNumbersServlet extends HttpServlet {
         //设置编码格式
         response.setContentType("text/html;charset=UTF-8");
         //初始化
-        this.init();
+        this.init(request);
         //获取PrintWrite对象
         PrintWriter printWriter = response.getWriter();
         //显示我的新信息
@@ -49,23 +49,13 @@ public class ShowChatNumbersServlet extends HttpServlet {
         HttpSession httpSession = request.getSession();
         //获取和设置用户的用户的账号
         this.setUser_id((String) httpSession.getAttribute("user_id"));
-        try {
-            //获取 查看新信息工具类 对象
-            HaveNewInformation haveNewInformation = new HaveNewInformation(this.getUser_id());
-            //获取设置 新信息数量
-            this.setNumber(haveNewInformation.getNumber());
-            //获取设置 新信息编号
-            this.setTies(haveNewInformation.getTies());
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+        System.out.println("查看用户新信息页面" + this.getUser_id());
     }
 
 
     public void showMyNewChatInformation(PrintWriter printWriter) throws SQLException, ClassNotFoundException {
         GetUserNewInformation getUserNewInformation = new GetUserNewInformation(this.getUser_id());
+        System.out.println(this.getUser_id() + "-------");
         printWriter.println("<table border=\"1\">\n" +
                             "    <tr>\n" +
                             "        <th>\n" +
@@ -88,8 +78,7 @@ public class ShowChatNumbersServlet extends HttpServlet {
                                 "        <td>\n" +
                                             informationId +
                                 "        </td>\n" +
-                                "    </tr>\n" +
-                                "</table>");
+                                "</tr>");
         }
         printWriter.println("</table>");
     }
@@ -108,14 +97,6 @@ public class ShowChatNumbersServlet extends HttpServlet {
 
     public void setUser_id(String user_id) {
         this.user_id = user_id;
-    }
-
-    public String[] getTies() {
-        return ties;
-    }
-
-    public void setTies(String[] ties) {
-        this.ties = ties;
     }
 
     private String[] ties ;
