@@ -16,7 +16,7 @@ public class Itme02 {
         this.my_friend_id = my_friend_id;
     }
 
-    public String getDatetimr() {
+    public String getDatetime() {
         return datetime;
     }
 

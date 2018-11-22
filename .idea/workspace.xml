@@ -7,13 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7402b093-bb6d-4217-8041-c55d166f3b98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/Chat/WhatNewChat.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chat/GetNewInformation/GetNewInformation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chat/ShowNewInformation/ShowChatInformationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chat/ShowNewInformation/ShowChatInformationServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chat/ShowNewInformation/ShowChatNumbersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chat/ShowNewInformation/ShowChatNumbersServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chat/FindNewInformation/GetUserNewInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chat/FindNewInformation/GetUserNewInformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chat/FindNewInformation/Itme02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chat/FindNewInformation/Itme02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tools/GetTime/getNowTime.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Test/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Test/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Chat/WhatNewChat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Chat/WhatNewChat.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,7 +81,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="89" />
+          <entry key="java" value="90" />
           <entry key="jsp" value="32" />
           <entry key="patch" value="1" />
           <entry key="txt" value="6" />
@@ -92,7 +90,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="89" />
+          <entry key="JAVA" value="90" />
           <entry key="JSP" value="32" />
           <entry key="PATCH" value="1" />
           <entry key="PLAIN_TEXT" value="6" />
@@ -101,17 +99,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="16359" />
-          <entry key="jsp" value="1330" />
-          <entry key="txt" value="466" />
+          <entry key="java" value="16447" />
+          <entry key="jsp" value="1615" />
+          <entry key="txt" value="482" />
           <entry key="xml" value="287" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="16352" />
-          <entry key="JSP" value="1330" />
-          <entry key="PLAIN_TEXT" value="466" />
+          <entry key="JAVA" value="16440" />
+          <entry key="JSP" value="1615" />
+          <entry key="PLAIN_TEXT" value="482" />
           <entry key="RegExp" value="7" />
           <entry key="XML" value="287" />
         </counts>
@@ -133,11 +131,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Chat/ShowNewInformation/ShowChatNumbersServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="67" column="34" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+            <state relative-caret-position="321">
+              <caret line="62" column="50" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1804#1805#0" expanded="true" />
@@ -154,40 +152,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Chat/FindNewInformation/GetUserNewInformation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1148#1149#0" expanded="true" />
-                <element signature="e#1178#1179#0" expanded="true" />
-                <element signature="e#1224#1225#0" expanded="true" />
-                <element signature="e#1262#1263#0" expanded="true" />
-                <element signature="e#1292#1293#0" expanded="true" />
-                <element signature="e#1318#1319#0" expanded="true" />
-                <element signature="e#1356#1357#0" expanded="true" />
-                <element signature="e#1386#1387#0" expanded="true" />
-                <element signature="e#1423#1424#0" expanded="true" />
-                <element signature="e#1454#1455#0" expanded="true" />
-                <element signature="e#1504#1505#0" expanded="true" />
-                <element signature="e#1544#1545#0" expanded="true" />
-                <element signature="e#1944#1945#0" expanded="true" />
-                <element signature="e#1974#1975#0" expanded="true" />
-                <element signature="e#1944#1945#0" expanded="true" />
-                <element signature="e#1971#1972#0" expanded="true" />
-                <element signature="e#2022#2023#0" expanded="true" />
-                <element signature="e#2054#2055#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Chat/FindNewInformation/Itme02.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="285">
+              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
               <folding>
                 <element signature="e#93#94#0" expanded="true" />
                 <element signature="e#128#129#0" expanded="true" />
@@ -215,11 +183,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/Chat/WhatNewChat.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+            <state relative-caret-position="270">
+              <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Chat/FindNewInformation/GetUserNewInformation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="99" column="9" lean-forward="true" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -336,13 +316,13 @@
         <option value="$PROJECT_DIR$/src/Chat/GetChatInformationServlet.java" />
         <option value="$PROJECT_DIR$/src/Chat/FindNewInformation/HaveNewInformation.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/Chat/FindNewInformation/Itme02.java" />
         <option value="$PROJECT_DIR$/src/Chat/GetNewInformation/ShowNewInformationTieServlet.java" />
         <option value="$PROJECT_DIR$/web/Main/index.jsp" />
-        <option value="$PROJECT_DIR$/src/Chat/FindNewInformation/GetUserNewInformation.java" />
         <option value="$PROJECT_DIR$/src/Chat/ShowNewInformation/ShowChatInformationServlet.java" />
         <option value="$PROJECT_DIR$/web/Test/index.jsp" />
         <option value="$PROJECT_DIR$/src/Chat/ShowNewInformation/ShowChatNumbersServlet.java" />
+        <option value="$PROJECT_DIR$/src/Chat/FindNewInformation/GetUserNewInformation.java" />
+        <option value="$PROJECT_DIR$/src/Chat/FindNewInformation/Itme02.java" />
         <option value="$PROJECT_DIR$/web/Chat/WhatNewChat.jsp" />
       </list>
     </option>
@@ -449,7 +429,7 @@
     <property name="SearchEverywhereHistoryKey" value="set Background Image&#9;PSI&#9;JAVA://org.w3c.dom.css.CSS2Properties#setBackgroundImage" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542889744433" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542890556926" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -691,14 +671,7 @@
       <workItem from="1542804477831" duration="15000" />
       <workItem from="1542804509269" duration="3112000" />
       <workItem from="1542813231406" duration="1692000" />
-      <workItem from="1542847643701" duration="15760000" />
-    </task>
-    <task id="LOCAL-00009" summary="添加朋友 V 1.0.1">
-      <created>1541167206343</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1541167206343</updated>
+      <workItem from="1542847643701" duration="16468000" />
     </task>
     <task id="LOCAL-00010" summary="联系我们 V 1.0.1">
       <created>1541167256628</created>
@@ -1036,17 +1009,24 @@
       <option name="project" value="LOCAL" />
       <updated>1542889032289</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="界面.聊天.查看我新信息（2）.获取新消息的编号 V1.0.4">
+      <created>1542889822691</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1542889822691</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98541000" />
+    <option name="totallyTimeSpent" value="99249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49044585" visible="true" weight="0.24320458" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49044585" visible="true" weight="0.24320458" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1056,7 +1036,7 @@
       <window_info id="Web" order="7" sideWeight="0.50955415" side_tool="true" weight="0.2811159" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43312103" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43312103" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1086,7 +1066,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="显示所有好友.获取好友 V1.0.1" />
     <MESSAGE value="显示所有好友.显示好友 V1.0.2" />
     <MESSAGE value="聊天.获取聊天信息 V1.0.2" />
     <MESSAGE value="聊天.保存聊天信息 V1.0.3" />
@@ -1111,7 +1090,8 @@
     <MESSAGE value="界面.聊天.发送聊天信息 V1.0.1" />
     <MESSAGE value="界面.聊天.查看我的新信息 V1.0.2" />
     <MESSAGE value="界面.聊天.查看我新信息（1） V1.0.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="界面.聊天.查看我新信息（1） V1.0.3" />
+    <MESSAGE value="界面.聊天.查看我新信息（2）.获取新消息的编号 V1.0.4" />
+    <option name="LAST_COMMIT_MESSAGE" value="界面.聊天.查看我新信息（2）.获取新消息的编号 V1.0.4" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web/DeleteFriend/Error/index.jsp">
@@ -1436,27 +1416,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat/FindNewInformation/Itme02.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#93#94#0" expanded="true" />
-            <element signature="e#128#129#0" expanded="true" />
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Chat/FindNewInformation/HaveNewInformation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1464,34 +1423,6 @@
           <folding>
             <element signature="e#1450#1451#0" expanded="true" />
             <element signature="e#1480#1481#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat/FindNewInformation/GetUserNewInformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
-            <element signature="e#1224#1225#0" expanded="true" />
-            <element signature="e#1262#1263#0" expanded="true" />
-            <element signature="e#1292#1293#0" expanded="true" />
-            <element signature="e#1318#1319#0" expanded="true" />
-            <element signature="e#1356#1357#0" expanded="true" />
-            <element signature="e#1386#1387#0" expanded="true" />
-            <element signature="e#1423#1424#0" expanded="true" />
-            <element signature="e#1454#1455#0" expanded="true" />
-            <element signature="e#1504#1505#0" expanded="true" />
-            <element signature="e#1544#1545#0" expanded="true" />
-            <element signature="e#1944#1945#0" expanded="true" />
-            <element signature="e#1974#1975#0" expanded="true" />
-            <element signature="e#1944#1945#0" expanded="true" />
-            <element signature="e#1971#1972#0" expanded="true" />
-            <element signature="e#2022#2023#0" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1531,10 +1462,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chat/FindNewInformation/Itme02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <element signature="e#93#94#0" expanded="true" />
+            <element signature="e#128#129#0" expanded="true" />
+            <element signature="e#184#185#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Chat/WhatNewChat.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chat/FindNewInformation/GetUserNewInformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="99" column="9" lean-forward="true" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Chat/ShowNewInformation/ShowChatNumbersServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="67" column="34" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+        <state relative-caret-position="321">
+          <caret line="62" column="50" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1804#1805#0" expanded="true" />
@@ -1546,13 +1515,6 @@
             <element signature="e#3502#3503#0" expanded="true" />
             <element signature="e#3540#3541#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Chat/WhatNewChat.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
         </state>
       </provider>
     </entry>

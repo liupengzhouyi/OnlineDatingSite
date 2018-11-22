@@ -100,6 +100,16 @@ public class GetUserNewInformation {
         this.list = list;
     }
 
+    /**
+     * 获取指定的聊天数据
+     * @param number
+     * @return
+     */
+    public Itme02 getChatInformation(int number) {
+        Itme02 itme02 = this.list.get(number);
+        return itme02;
+    }
+
     private String user_id = null;
 
     private String sql = null;
