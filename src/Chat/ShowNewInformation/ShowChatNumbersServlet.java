@@ -49,13 +49,11 @@ public class ShowChatNumbersServlet extends HttpServlet {
         HttpSession httpSession = request.getSession();
         //获取和设置用户的用户的账号
         this.setUser_id((String) httpSession.getAttribute("user_id"));
-        System.out.println("查看用户新信息页面" + this.getUser_id());
     }
 
 
     public void showMyNewChatInformation(PrintWriter printWriter) throws SQLException, ClassNotFoundException {
         GetUserNewInformation getUserNewInformation = new GetUserNewInformation(this.getUser_id());
-        System.out.println(this.getUser_id() + "-------");
         printWriter.println("<table border=\"1\">\n" +
                             "    <tr>\n" +
                             "        <th>\n" +
@@ -76,9 +74,12 @@ public class ShowChatNumbersServlet extends HttpServlet {
                                             i +
                                 "        </td>\n" +
                                 "        <td>\n" +
-                                            informationId +
-                                "        </td>\n" +
+                                "            <a href=\"/Chat/WhatNewChat.jsp?number=" + i + "\">\n" +
+                                                informationId +
+                                "            </a>\n" +
+                                "        </td>" +
                                 "</tr>");
+            i = i + 1;
         }
         printWriter.println("</table>");
     }

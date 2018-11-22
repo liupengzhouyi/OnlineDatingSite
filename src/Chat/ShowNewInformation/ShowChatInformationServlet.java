@@ -26,8 +26,8 @@ public class ShowChatInformationServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //初始化函数
         this.init(request);
-        //设置编码
-        response.setContentType("");
+        //设置编码格式
+        response.setContentType("text/html;charset=UTF-8");
         try {
             //获取信息
             this.getDataInformation();

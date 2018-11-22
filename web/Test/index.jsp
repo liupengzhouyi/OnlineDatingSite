@@ -31,7 +31,9 @@
 
         </td>
         <td>
+            <a href="/Chat/WhatNewChat.jsp?number=1">
 
+            </a>
         </td>
     </tr>
 </table>
