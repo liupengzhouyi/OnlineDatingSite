@@ -1,5 +1,6 @@
 <%@ page import="Chat.FindNewInformation.Itme02" %>
-<%@ page import="Chat.FindNewInformation.GetUserNewInformation" %><%--
+<%@ page import="Chat.FindNewInformation.GetUserNewInformation" %>
+<%@ page import="Chat.UpdateOneChatInformation.UpdateOneChatInformation" %><%--
   Created by IntelliJ IDEA.
   User: liupeng
   Date: 2018/11/22
@@ -22,6 +23,10 @@
     //获取新信息
     GetUserNewInformation getUserNewInformation = new GetUserNewInformation(user_id);
     Itme02 itme02 = getUserNewInformation.getChatInformation(Integer.parseInt(number) - 1);
+    //消除信息的未读状态
+    String chat_id = itme02.getChat_id();
+    UpdateOneChatInformation updateOneChatInformation = new UpdateOneChatInformation(user_id, chat_id, number);
+
 %>
 
 <table border="1">

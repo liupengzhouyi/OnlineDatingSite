@@ -41,11 +41,13 @@ public class GetUserNewInformation {
         String my_friend_id = "";
         String datetime = "";
         String information = "";
+        String chat_id = "";
         while (resultSet.next()) {
+            chat_id = resultSet.getString("char_id");
             my_friend_id = resultSet.getString("user_id");
             information = resultSet.getString("text");
             datetime = resultSet.getString("char_data_time");
-            Itme02 itme02 = new Itme02(my_friend_id, datetime, information);
+            Itme02 itme02 = new Itme02(chat_id, my_friend_id, datetime, information);
             this.addList(itme02);
         }
     }
