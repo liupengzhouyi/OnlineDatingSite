@@ -44,6 +44,7 @@ public class HaveNewInformation {
             //添加新信息
             this.setTemp_string(this.getTemp_string() + temp + ",");
         }
+        this.setTies();
     }
 
     public String getSql() {

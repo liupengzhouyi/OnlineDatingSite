@@ -135,4 +135,14 @@
         <servlet-name>GetAddFriendFruitServlet</servlet-name>
         <url-pattern>/EndOfAddFriend/GetAddFriendFruitServlet</url-pattern>
     </servlet-mapping>
+
+    <!--显示新信息条目-->
+    <servlet>
+        <servlet-name>ShowChatNumbersServlet</servlet-name>
+        <servlet-class>Chat.ShowNewInformation.ShowChatNumbersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowChatNumbersServlet</servlet-name>
+        <url-pattern>/Chat/ShowNewInformation/ShowChatNumbersServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

@@ -38,6 +38,18 @@
     </tr>
     <tr>
         <td>
+            <a href="/Chat/GetNewInformation/ShowNewInformationTieServlet">
+                see my new information
+            </a>
+        </td>
+        <td>
+            <a href="/Chat/ShowNewInformation/ShowChatNumbersServlet">
+                my new information
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
             <a href="/Chat/FindFriendToChat/ChatServlet">
                 聊天
             </a>

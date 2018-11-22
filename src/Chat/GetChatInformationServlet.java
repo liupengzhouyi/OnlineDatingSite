@@ -74,7 +74,7 @@ public class GetChatInformationServlet extends HttpServlet {
         //告诉朋友有新的信息
 
 
-        String string = "insert into char_tie(user_id, is_new) values (\'" + this.getFriend_id() + "\', 0);";
+        String string = "insert into char_tie(user_id, is_new) values (\'" + this.getFriend_id() + "\', 1);";
 
         this.setSqlII(string);
     }

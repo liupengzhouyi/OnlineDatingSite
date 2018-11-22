@@ -1,6 +1,8 @@
-package Chat.GetNewInformation;
+package Chat.ShowNewInformation;
 
+import Chat.FindNewInformation.GetUserNewInformation;
 import Chat.FindNewInformation.HaveNewInformation;
+import Chat.FindNewInformation.Itme02;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,18 +13,27 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
-@WebServlet(name = "ShowNewInformationTieServlet")
-public class ShowNewInformationTieServlet extends HttpServlet {
+@WebServlet(name = "ShowChatNumbersServlet")
+public class ShowChatNumbersServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //设置编码格式
         response.setContentType("text/html;charset=UTF-8");
-        //初始化函数
-        this.init(request);
-        //获取PrintWirter对象
+        //初始化
+        this.init();
+        //获取PrintWrite对象
         PrintWriter printWriter = response.getWriter();
-        //输出提示信息
-        this.printInformation(printWriter);
+        //显示我的新信息
+        try {
+            this.showMyNewChatInformation(printWriter);
+        } catch (SQLException e) {
+            System.out.println("出现错误信息！出错地址：查找你的新信息的时候");
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            System.out.println("出现错误信息！出错地址：查找你的新信息的时候");
+            e.printStackTrace();
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -38,7 +49,6 @@ public class ShowNewInformationTieServlet extends HttpServlet {
         HttpSession httpSession = request.getSession();
         //获取和设置用户的用户的账号
         this.setUser_id((String) httpSession.getAttribute("user_id"));
-
         try {
             //获取 查看新信息工具类 对象
             HaveNewInformation haveNewInformation = new HaveNewInformation(this.getUser_id());
@@ -53,30 +63,35 @@ public class ShowNewInformationTieServlet extends HttpServlet {
         }
     }
 
-    /**
-     * 输出新信息通知编号
-     * @param printWriter
-     */
-    public void printInformation(PrintWriter printWriter) {
+
+    public void showMyNewChatInformation(PrintWriter printWriter) throws SQLException, ClassNotFoundException {
+        GetUserNewInformation getUserNewInformation = new GetUserNewInformation(this.getUser_id());
         printWriter.println("<table border=\"1\">\n" +
                             "    <tr>\n" +
-                            "        <th colspan=\"2\">\n" +
-                            "            新信息提示\n" +
+                            "        <th>\n" +
+                            "            信息新编号\n" +
+                            "        </th>\n" +
+                            "        <th>\n" +
+                            "            查看新信息\n" +
                             "        </th>\n" +
                             "    </tr>");
-        String number = "";
-        for (int i = 0;i<this.getNumber();i++) {
-            number = this.getTies()[i];
+        ArrayList<Itme02> list = getUserNewInformation.getList();
+        int i = 1;
+        String informationId = "";
+        for (Itme02 itme02 : list
+             ) {
+            informationId = "您的好友" + itme02.getMy_friend_id() + "给您发来一条信息！";
             printWriter.println("<tr>\n" +
-                                "        <td colspan=\"1\">\n" +
-                                             number +
+                                "        <td>\n" +
+                                            i +
                                 "        </td>\n" +
-                                "        <td colspan=\"1\">\n" +
-                                "            <a href=\"/Chat/ShowNewInformation/ShowChatNumbersServlet\"><button>查看</button></a>\n" +
+                                "        <td>\n" +
+                                            informationId +
                                 "        </td>\n" +
-                                "    </tr>");
+                                "    </tr>\n" +
+                                "</table>");
         }
-            printWriter.println("</table>");
+        printWriter.println("</table>");
     }
 
     public int getNumber() {
