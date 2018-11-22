@@ -14,14 +14,24 @@
 <table border="1">
     <tr>
         <th>
-            我的好友
+            我的申请好友
+        </th>
+        <th>
+            是否查看好友申请
+        </th>
+        <th>
+            是否同意好友申请
         </th>
     </tr>
     <tr>
         <td>
-            <a href="/">
 
-            </a>
+        </td>
+        <td>
+
+        </td>
+        <td>
+
         </td>
     </tr>
 </table>

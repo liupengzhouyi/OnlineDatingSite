@@ -18,8 +18,8 @@ public class ChatServlet extends HttpServlet {
 
         //初始化
         this.init(request);
-        //设置编码格式
-        //response.setContentType("");
+        // 设置编码格式
+        response.setContentType("text/html;charset=UTF-8");
         //获取好友列表
         try {
             this.setFriends();
@@ -55,16 +55,16 @@ public class ChatServlet extends HttpServlet {
      * @param printWriter
      */
     public void listFriend(PrintWriter printWriter) {
-        printWriter.println("<table border=\"1\">\n" +
+        printWriter.println("<table border=1>\n" +
                             "    <tr>\n" +
-                            "        <th colspan=\"2\">\n" +
+                            "        <th colspan=2>\n" +
                             "            新信息提示\n" +
                             "        </th>\n" +
                             "    </tr>");
         for (int i=0;i<this.getFriends().length;i++) {
             printWriter.println("tr>\n" +
                                 "        <td>\n" +
-                                "            <a href=\"/Chat/ChatWith.jsp?friend_id=" + this.getFriends() + "\">\n" +
+                                "            <a href=\"/Chat/ChatWith.jsp?friend_id_to_chat=" + this.getFriends()[i] + "\">\n" +
                                                 this.getFriends()[i] +
                                 "            </a>\n" +
                                 "        </td>\n" +

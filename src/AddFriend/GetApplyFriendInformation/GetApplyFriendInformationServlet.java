@@ -70,7 +70,7 @@ public class GetApplyFriendInformationServlet extends HttpServlet {
         //连接数据库
         linkDatabases lpLinkDatabases = new linkDatabases();
         //准备SQL语句
-        String sql = "select * from apply_for_friend where friend_number = \'" + user_id + "\';";
+        String sql = "select * from apply_for_friend where friend_number = \'" + user_id + "\'and new_key = 1;";
         ResultSet resultSet = lpLinkDatabases.getInformation(sql);
         while(resultSet.next()) {
             returnKey = true;

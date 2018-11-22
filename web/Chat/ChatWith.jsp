@@ -12,13 +12,12 @@
 </head>
 <%
     //获取好友账号
-    String friend_id = request.getParameter("friend_id");
+    String friend_id = request.getParameter("friend_id_to_chat");
     //判断好友
 
     HttpSession httpSession = request.getSession();
     httpSession.setAttribute("friend_id", friend_id);
-    //String friend_id = "1111111111";
-
+    System.out.println(friend_id);
 %>
 <body>
 <form action="/Chat/GetChatInformationServlet" method="post">

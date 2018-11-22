@@ -18,6 +18,11 @@
                 新的好友申请消息
             </a>
         </td>
+        <td>
+            <a href="/EndOfAddFriend/GetAddFriendFruitServlet">
+                我的好友申请结果
+            </a>
+        </td>
     </tr>
     <tr>
         <td>
@@ -33,7 +38,7 @@
     </tr>
     <tr>
         <td>
-            <a href="">
+            <a href="/Chat/FindFriendToChat/ChatServlet">
                 聊天
             </a>
         </td>

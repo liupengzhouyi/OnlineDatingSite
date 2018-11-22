@@ -126,4 +126,13 @@
         <url-pattern>/DeleteFriend/DeleteMyFriendShipWithServlet</url-pattern>
     </servlet-mapping>
 
+    <!--查看好友申请的结果-->
+    <servlet>
+        <servlet-name>GetAddFriendFruitServlet</servlet-name>
+        <servlet-class>EndOfAddFriend.GetAddFriendFruitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetAddFriendFruitServlet</servlet-name>
+        <url-pattern>/EndOfAddFriend/GetAddFriendFruitServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

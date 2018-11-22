@@ -58,11 +58,7 @@ public class GetChatInformationServlet extends HttpServlet {
      * 生成聊天信息入库SQL 语句
      */
     public void createSQLI() {
-        //第一次
-        //String string = "insert into char_information (char_id, user_id, friend_id, text, char_data_time, is_new) " +
-        //        "values (1, \'" + this.getMy_id() + "\', \'" + this.getFriend_id() + "\', \'" + this.getChat() + "\', \'" + new GetNowTime().getDateTime() +"\', 1);";
-
-        //第1 + n次
+        
         String string = "insert into char_information (user_id, friend_id, text, char_data_time, is_new) " +
                 "values (\'" + this.getMy_id() + "\', \'" + this.getFriend_id() + "\', \'" + this.getChat() + "\', \'" + new GetNowTime().getDateTime() +"\', 1);";
 
