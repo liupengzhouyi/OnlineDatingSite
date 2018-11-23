@@ -18,6 +18,7 @@
     String number = request.getParameter("number");
     //获取用户账号
     String user_id = "";
+    System.out.println("number:" + number);
     HttpSession httpSession = request.getSession();
     user_id = (String) httpSession.getAttribute("user_id");
     //获取新信息
@@ -26,7 +27,6 @@
     //消除信息的未读状态
     String chat_id = itme02.getChat_id();
     UpdateOneChatInformation updateOneChatInformation = new UpdateOneChatInformation(user_id, chat_id, number);
-
 %>
 
 <table border="1">

@@ -7,11 +7,11 @@ import java.sql.SQLException;
 
 public class GetTieNumber {
 
-    public GetTieNumber(String user_id, int number) {
+    public GetTieNumber(String user_id, int number) throws SQLException, ClassNotFoundException {
         //初始化函数
         this.init(user_id, number);
         //连接数据库，获取提示的编号
-        this.getTieNumber();
+        this.getTeiNumber();
     }
 
 
@@ -38,9 +38,10 @@ public class GetTieNumber {
     public void getTeiNumber() throws ClassNotFoundException, SQLException {
         linkDatabases linkDatabases = new linkDatabases();
         ResultSet resultSet = linkDatabases.getInformation(this.getSql());
-        int i = 0;
+        int i = 1;
         while(resultSet.next()) {
             String tie = resultSet.getString("tie_id");
+            System.out.println("tie_id: "  + tie);
             if (i == this.getNumber()) {
                 this.setTieNumber(tie);
                 break;

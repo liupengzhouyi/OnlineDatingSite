@@ -32,18 +32,20 @@ public class UpdateOneChatInformation {
         this.number  = new String();
     }
 
-    public void getTieNumber() {
+    public void getTieNumber() throws SQLException, ClassNotFoundException {
         int num = Integer.parseInt(this.getNumber());
         GetTieNumber getTieNumber = new GetTieNumber(this.getUser_id(),num);
         String tempNum = getTieNumber.getTieNumber();
+        this.setTie_id(tempNum);
     }
 
     /**
      * 设置聊天信息  提示  表中的数据更新 的 SQL语句
      */
     public void createSqlI() {
-        String str = "update char_tie set is_new = 0 where tie_id = ;";
+        String str = "update char_tie set is_new = 0 where tie_id = " + this.getTie_id() + ";";
         this.setSql(str);
+        System.out.println("设置聊天信息  提示  表中的数据更新 的 SQL语句" + str);
     }
 
     /**
@@ -64,6 +66,7 @@ public class UpdateOneChatInformation {
     public void createSqlII() {
         String str = "update char_information set is_new = 0 where char_id = " + this.getChat_id() + ";";
         this.setSql(str);
+        System.out.println("设置更新聊天信息表中的数据: " + str);
     }
 
     public String getUser_id() {
