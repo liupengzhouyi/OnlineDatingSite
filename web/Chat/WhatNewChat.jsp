@@ -1,6 +1,8 @@
 <%@ page import="Chat.FindNewInformation.Itme02" %>
 <%@ page import="Chat.FindNewInformation.GetUserNewInformation" %>
-<%@ page import="Chat.UpdateOneChatInformation.UpdateOneChatInformation" %><%--
+<%@ page import="Chat.UpdateOneChatInformation.UpdateOneChatInformation" %>
+<%@ page import="Tools.decode.Decode" %>
+<%@ page import="Tools.UserEmail.GetUserEmailByYourId" %><%--
   Created by IntelliJ IDEA.
   User: liupeng
   Date: 2018/11/22
@@ -27,8 +29,17 @@
     //消除信息的未读状态
     String chat_id = itme02.getChat_id();
     UpdateOneChatInformation updateOneChatInformation = new UpdateOneChatInformation(user_id, chat_id, number);
-
-
+    // 解密
+    // 获取用户邮箱
+    String email = "";
+    GetUserEmailByYourId getUserEmailByYourId = new GetUserEmailByYourId(user_id);
+    email = getUserEmailByYourId.getEmail();
+        System.out.println("获取解密用户的电子邮件地址");
+    //开始解密
+    Decode decode = new Decode(email, itme02.getInformation());
+    //设置明文
+    itme02.setInformation(decode.getText());
+    System.out.println("解密后的明文：" + itme02.getInformation());
 %>
 
 <table border="1">

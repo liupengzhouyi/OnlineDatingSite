@@ -3,7 +3,7 @@ package Tools.Password;
 public class doing {
     public static void main(String[] args) {
         String user = "liupeng.0@outlook.com";
-        String code = "核心价值观";
+        String code = "fuck";
 
         System.out.println("用户：" + user);
 

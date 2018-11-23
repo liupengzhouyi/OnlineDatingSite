@@ -9,7 +9,7 @@ public class Decode {
         this.init(email, ciphertext);
 
         // 解密
-
+        this.setText();
     }
 
     /**
@@ -68,4 +68,9 @@ public class Decode {
     private String ciphertext = null;
 
     private String text = null;
+
+    public static void main(String[] args) {
+        Decode decode = new Decode("liupeng.0@outlook.com", "社会主义核心价值观,公正,平等,平等,敬业,敬业,社会主义核心价值观,爱国,平等,平等,诚信,爱国,社会主义核心价值观,公正,平等,平等,敬业,和谐,社会主义核心价值观,公正,平等,平等,敬业,民主,富强,法治,友善,");
+        System.out.println(decode.getText());
+    }
 }
