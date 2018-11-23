@@ -42,7 +42,7 @@ public class GetChatInformationServlet extends HttpServlet {
     }
 
     /**
-     * 初始化函数
+     * 初始化 函数
      * @param request
      */
     public void init(HttpServletRequest request) throws UnsupportedEncodingException {
