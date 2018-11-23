@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.sql.SQLException;
 
 @WebServlet(name = "GetChatInformationServlet")
@@ -20,7 +21,7 @@ public class GetChatInformationServlet extends HttpServlet {
         //准备SQL语句
         //  1。 聊天信息
         //  2。 新信息提示
-        this.createSQLI();
+        this.createSQLI() ;
         this.createSQLII();
         //数据入库
         try {
@@ -44,7 +45,7 @@ public class GetChatInformationServlet extends HttpServlet {
      * 初始化函数
      * @param request
      */
-    public void init(HttpServletRequest request) {
+    public void init(HttpServletRequest request) throws UnsupportedEncodingException {
         //获取当前Session对象
         HttpSession httpSession = request.getSession();
         //获取用户ID
@@ -52,7 +53,10 @@ public class GetChatInformationServlet extends HttpServlet {
         //获取好友ID
         this.setFriend_id((String)httpSession.getAttribute("friend_id_to_chat"));
         //获取聊天信息
-        this.setChat(request.getParameter("charInformation"));
+        String information = request.getParameter("charInformation");
+        information = new String(information.getBytes("ISO-8859-1"),"utf-8");
+        System.out.println(information);
+        this.setChat(information);
     }
 
 
