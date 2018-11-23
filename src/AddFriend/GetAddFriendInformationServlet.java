@@ -42,8 +42,8 @@ public class GetAddFriendInformationServlet extends HttpServlet {
                         //没有这个好友
                         //准备数据哭语句
                         //好友申请SQL
-                        String sqlI = "insert into my_friends(friend_id, my_id, my_friend_id, my_name, my_friend_name, friend_date, friendship)" +
-                                " values (1, \\\'" + this.getMyId() + "\\\', \\\'" + this.getFriendId() + "\\\', \\\'\\\', \\\'" + this.getFriendName() + "\\\', now(), 1);";
+                        String sqlI = "insert into my_friends(my_id, my_friend_id, my_name, my_friend_name, friend_date, friendship)" +
+                                " values (\\\'" + this.getMyId() + "\\\', \\\'" + this.getFriendId() + "\\\', \\\'\\\', \\\'" + this.getFriendName() + "\\\', now(), 1);";
                         //好友申请通知好SQL
                         String sqlII = "insert into apply_for_friend(friend_number, my_number, my_sql, new_key) " +
                                 "values (\'" + this.getFriendId() + "\', \'" + this.getMyId() + "\', \'" + sqlI + "\', 1);";
