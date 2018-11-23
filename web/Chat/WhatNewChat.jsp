@@ -27,6 +27,8 @@
     //消除信息的未读状态
     String chat_id = itme02.getChat_id();
     UpdateOneChatInformation updateOneChatInformation = new UpdateOneChatInformation(user_id, chat_id, number);
+
+
 %>
 
 <table border="1">

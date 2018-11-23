@@ -39,12 +39,12 @@
     <tr>
         <td>
             <a href="/Chat/GetNewInformation/ShowNewInformationTieServlet">
-                see my new information
+                新信息
             </a>
         </td>
         <td>
             <a href="/Chat/ShowNewInformation/ShowChatNumbersServlet">
-                my new information
+                我的新信息
             </a>
         </td>
     </tr>

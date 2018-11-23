@@ -56,7 +56,7 @@ public class GetAddFriendInformationServlet extends HttpServlet {
                         //this.saveData(sqlI);
                         this.saveData(sqlII);
                         System.out.println("添加好友信息已发出，等待好友验证！");
-                        response.sendRedirect("/");
+                        response.sendRedirect("/AddFriend/Success/index.jsp");
                     }
                 } else {
                     //没有这个账号
