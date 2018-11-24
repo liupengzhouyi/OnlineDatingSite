@@ -3,6 +3,7 @@ package AddFriend;
 import AddFriend.FindFriend.FindFriend;
 import AddFriend.FindFriend.IsMyFriend;
 import AddFriend.JavaBean.ApplyFriend;
+import Chat.VerifyFriend.HasThisFriend;
 import Tools.LinkDatabase.linkDatabases;
 
 import javax.servlet.ServletException;
@@ -32,12 +33,15 @@ public class GetAddFriendInformationServlet extends HttpServlet {
             try {
                 if (new FindFriend(this.getFriendId()).friendIsExist()) {
 
+
                     //是否已经拥有这个好友
-                    if (new IsMyFriend(this.getMyId(), this.getFriendId()).isMyFriend()) {
+                    boolean hasFriend = false;
+                    HasThisFriend hasThisFriend = new HasThisFriend(this.getMyId(), getFriendId());
+                    if (hasThisFriend.isHas()) {
                         //已经拥有了
                         //跳转页面
                         System.out.println("您已经拥有这个好友");
-                        response.sendRedirect("/");
+                        response.sendRedirect("/AddFriend/HasThisFriend/index.jsp");
                     } else {
                         //没有这个好友
                         //准备数据哭语句
