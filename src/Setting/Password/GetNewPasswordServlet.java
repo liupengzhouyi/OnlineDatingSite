@@ -35,6 +35,9 @@ public class GetNewPasswordServlet extends HttpServlet {
                     System.out.println("可以修改密码");
                     UpdateUserPassword updateUserPassword = new UpdateUserPassword(this.getUser_id(), this.getNew_passwordI());
                     updateUserPassword.updatePasswordValue();
+                    System.out.println("重新登录");
+
+                    response.sendRedirect("/index.jsp");
                 } else {
                     System.out.println("你的密码不一致");
                     response.sendRedirect("/Setting/Password/ErrorPage/passwordErrorII.jsp");

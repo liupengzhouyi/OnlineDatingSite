@@ -36,7 +36,6 @@ public class DeleteMyFriendShipWithServlet extends HttpServlet {
         doPost(request, response);
     }
 
-
     /**
      * 初始化函数
      * @param request

@@ -146,6 +146,7 @@
         <url-pattern>/Chat/ShowNewInformation/ShowChatNumbersServlet</url-pattern>
     </servlet-mapping>
 
+    <!--修改密码-->
     <servlet>
         <servlet-name>GetNewPasswordServlet</servlet-name>
         <servlet-class>Setting.Password.GetNewPasswordServlet</servlet-class>
@@ -153,5 +154,15 @@
     <servlet-mapping>
         <servlet-name>GetNewPasswordServlet</servlet-name>
         <url-pattern>/Setting/Password/GetNewPasswordServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--删除你的好友关系-->
+    <servlet>
+        <servlet-name>DeleteFriendServlet</servlet-name>
+        <servlet-class>DeleteFriend.DeleteFriendServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteFriendServlet</servlet-name>
+        <url-pattern>/DeleteFriend/DeleteFriendServlet</url-pattern>
     </servlet-mapping>
 </web-app>

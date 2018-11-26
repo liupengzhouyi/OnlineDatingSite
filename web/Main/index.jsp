@@ -31,7 +31,7 @@
             </a>
         </td>
         <td>
-            <a href="">
+            <a href="/DeleteFriend.DeleteFriendServlet">
                 删除好友
             </a>
         </td>
@@ -62,12 +62,12 @@
     </tr>
     <tr>
         <td>
-            <a href="">
+            <a href="/Setting/index.jsp">
                 设置
             </a>
         </td>
         <td>
-            <a href="">
+            <a href="/Out/index.jsp">
                 退出
             </a>
         </td>

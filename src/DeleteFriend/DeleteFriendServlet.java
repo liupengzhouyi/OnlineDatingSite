@@ -1,4 +1,4 @@
-package Chat.FindFriendToChat;
+package DeleteFriend;
 
 import Friends.ShowFriend.SelectFriend;
 
@@ -12,8 +12,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
 
-@WebServlet(name = "ChatServlet")
-public class ChatServlet extends HttpServlet {
+@WebServlet(name = "DeleteFriendServlet")
+public class DeleteFriendServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         //初始化
@@ -56,15 +56,15 @@ public class ChatServlet extends HttpServlet {
      */
     public void listFriend(PrintWriter printWriter) {
         printWriter.println("<table border=1>\n" +
-                            "    <tr>\n" +
-                            "        <th colspan=2>\n" +
-                            "            好友列表\n" +
-                            "        </th>\n" +
-                            "    </tr>");
+                "    <tr>\n" +
+                "        <th colspan=2>\n" +
+                "            删除好友\n" +
+                "        </th>\n" +
+                "    </tr>");
         for (int i=0;i<this.getFriends().length;i++) {
-            printWriter.println("<tr>\n" +
+                printWriter.println("<tr>\n" +
                                 "        <td>\n" +
-                                "            <a href=\"/Chat/ChatWith.jsp?friend_id_to_chat=" + this.getFriends()[i] + "\">\n" +
+                                "            <a href=\"/DeleteFriend/DeleteMyFriendShipWithServlet?friend_id=" + this.getFriends()[i] + "\">\n" +
                                                 this.getFriends()[i] +
                                 "            </a>\n" +
                                 "        </td>\n" +
