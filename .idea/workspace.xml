@@ -7,11 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7402b093-bb6d-4217-8041-c55d166f3b98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/AddFriend/HasThisFriend/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Setting/Password/GetNewPasswordServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Setting/Password/GetUserPasswordValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Setting/Password/UpdateUserPassword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Setting/Password/VerifyTwoPasswords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Setting/Password/VerifyUserOrdPassword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/AddFriend/AddYourself/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Setting/Password/ErrorPage/passwordErrorI.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Setting/Password/ErrorPage/passwordErrorII.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Setting/Password/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AddFriend/GetAddFriendInformationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddFriend/GetAddFriendInformationServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chat/VerifyFriend/HasThisFriend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chat/VerifyFriend/HasThisFriend.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tools/GetTime/getNowTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,7 +76,7 @@
     <session id="-908347946">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
+          <entry key="project.closed" value="21" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.2" value="1" />
@@ -76,43 +84,45 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="9" />
-          <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="23" />
+          <entry key="project.open.time.9" value="4" />
+          <entry key="project.opened" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="114" />
-          <entry key="jsp" value="40" />
+          <entry key="class" value="6" />
+          <entry key="java" value="122" />
+          <entry key="jsp" value="48" />
           <entry key="patch" value="1" />
           <entry key="txt" value="6" />
-          <entry key="xml" value="6" />
+          <entry key="xml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="114" />
-          <entry key="JSP" value="40" />
+          <entry key="CLASS" value="6" />
+          <entry key="JAVA" value="122" />
+          <entry key="JSP" value="48" />
           <entry key="PATCH" value="1" />
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="XML" value="6" />
+          <entry key="XML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="20635" />
-          <entry key="jsp" value="2094" />
-          <entry key="txt" value="565" />
-          <entry key="xml" value="287" />
+          <entry key="java" value="23628" />
+          <entry key="jsp" value="2422" />
+          <entry key="txt" value="574" />
+          <entry key="xml" value="301" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="20628" />
-          <entry key="JSP" value="2094" />
-          <entry key="PLAIN_TEXT" value="565" />
+          <entry key="JAVA" value="23621" />
+          <entry key="JSP" value="2422" />
+          <entry key="PLAIN_TEXT" value="574" />
           <entry key="RegExp" value="7" />
-          <entry key="XML" value="287" />
+          <entry key="XML" value="301" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.mvc.usages" />
@@ -123,95 +133,146 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Chat/VerifyFriend/HasThisFriend.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Setting/Password/GetNewPasswordServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="269">
+              <caret line="79" column="12" lean-forward="true" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1955#1956#0" expanded="true" />
+                <element signature="e#1990#1991#0" expanded="true" />
+                <element signature="e#2046#2047#0" expanded="true" />
+                <element signature="e#2094#2095#0" expanded="true" />
+                <element signature="e#1886#1887#0" expanded="true" />
+                <element signature="e#1922#1923#0" expanded="true" />
+                <element signature="e#1980#1981#0" expanded="true" />
+                <element signature="e#2030#2031#0" expanded="true" />
+                <element signature="e#2071#2072#0" expanded="true" />
+                <element signature="e#2108#2109#0" expanded="true" />
+                <element signature="e#2168#2169#0" expanded="true" />
+                <element signature="e#2220#2221#0" expanded="true" />
+                <element signature="e#2254#2255#0" expanded="true" />
+                <element signature="e#2284#2285#0" expanded="true" />
+                <element signature="e#2330#2331#0" expanded="true" />
+                <element signature="e#2368#2369#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AddFriend/GetAddFriendInformationServlet.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/Setting/Password/ErrorPage/passwordErrorI.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="195">
+              <caret line="13" selection-start-line="13" selection-end-line="24" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/AddFriend/index.jsp">
+        <entry file="file://$PROJECT_DIR$/web/Setting/Password/ErrorPage/passwordErrorII.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            <state relative-caret-position="180">
+              <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/AddFriend/HasThisFriend/index.jsp">
+        <entry file="file://$PROJECT_DIR$/src/Setting/Password/UpdateUserPassword.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="486">
+              <caret line="79" column="37" selection-start-line="78" selection-start-column="8" selection-end-line="79" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#217#218#0" expanded="true" />
+                <element signature="e#248#249#0" expanded="true" />
+                <element signature="e#296#297#0" expanded="true" />
+                <element signature="e#336#337#0" expanded="true" />
+                <element signature="e#376#377#0" expanded="true" />
+                <element signature="e#412#413#0" expanded="true" />
+                <element signature="e#470#471#0" expanded="true" />
+                <element signature="e#520#521#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
+                <element signature="e#576#577#0" expanded="true" />
+                <element signature="e#718#719#0" expanded="true" />
+                <element signature="e#748#749#0" expanded="true" />
+                <element signature="e#794#795#0" expanded="true" />
+                <element signature="e#832#833#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tools/Password/DIYCode.java">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3000">
-              <caret line="206" selection-start-line="206" selection-end-line="206" />
+            <state relative-caret-position="618">
+              <caret line="149" column="33" lean-forward="true" selection-start-line="149" selection-start-column="33" selection-end-line="149" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tools/Password/Encryption.java">
+        <entry file="file://$PROJECT_DIR$/web/Main/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="126">
+              <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tools/Password/doing.java">
+        <entry file="file://$PROJECT_DIR$/web/Setting/Password/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Setting/Password/VerifyUserOrdPassword.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#799#800#0" expanded="true" />
+                <element signature="e#825#826#0" expanded="true" />
+                <element signature="e#864#865#0" expanded="true" />
+                <element signature="e#894#895#0" expanded="true" />
+                <element signature="e#929#930#0" expanded="true" />
+                <element signature="e#960#961#0" expanded="true" />
+                <element signature="e#1008#1009#0" expanded="true" />
+                <element signature="e#1048#1049#0" expanded="true" />
+                <element signature="e#1088#1089#0" expanded="true" />
+                <element signature="e#1124#1125#0" expanded="true" />
+                <element signature="e#1182#1183#0" expanded="true" />
+                <element signature="e#1232#1233#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tools/Password/GetYourUnicode.java">
+        <entry file="file://$PROJECT_DIR$/src/Setting/Password/VerifyTwoPasswords.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tools/Password/password.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tools/Password/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="438">
+              <caret line="54" column="23" lean-forward="true" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
+              <folding>
+                <element signature="e#718#719#0" expanded="true" />
+                <element signature="e#754#755#0" expanded="true" />
+                <element signature="e#812#813#0" expanded="true" />
+                <element signature="e#862#863#0" expanded="true" />
+                <element signature="e#903#904#0" expanded="true" />
+                <element signature="e#940#941#0" expanded="true" />
+                <element signature="e#1000#1001#0" expanded="true" />
+                <element signature="e#1052#1053#0" expanded="true" />
+                <element signature="e#1082#1083#0" expanded="true" />
+                <element signature="e#1108#1109#0" expanded="true" />
+                <element signature="e#1147#1148#0" expanded="true" />
+                <element signature="e#1177#1178#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -245,16 +306,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/Chat/index.jsp" />
-        <option value="$PROJECT_DIR$/src/Chat/GetNewInformation/GetNewInformation.java" />
-        <option value="$PROJECT_DIR$/src/Tools/GetTime/GetNowTime.java" />
-        <option value="$PROJECT_DIR$/src/Tools/CreateUserNumber/GetProviceNumber.java" />
-        <option value="$PROJECT_DIR$/src/Chat/SaveChatInformation/SaveChatServlet.java" />
-        <option value="$PROJECT_DIR$/src/DeleteFriend/deleteFriend.java" />
-        <option value="$PROJECT_DIR$/src/DeleteFriend/DeleteFriend.java" />
-        <option value="$PROJECT_DIR$/src/DeleteFriend/DeleteMyFriendShipWithServlet.java" />
-        <option value="$PROJECT_DIR$/web/DeleteFriend/index.jsp" />
-        <option value="$PROJECT_DIR$/web/DeleteFriend/Success/index.jsp" />
         <option value="$PROJECT_DIR$/web/DeleteFriend/Error/index.jsp" />
         <option value="$PROJECT_DIR$/src/DatabaseInformation/CreateTable/chat_information.txt" />
         <option value="$PROJECT_DIR$/web/AddFriend/index.jsp" />
@@ -275,7 +326,6 @@
         <option value="$PROJECT_DIR$/src/EndOfAddFriend/GetAddFriendFruitServlet.java" />
         <option value="$PROJECT_DIR$/src/Chat/FindFriendToChat/ChatServlet.java" />
         <option value="$PROJECT_DIR$/src/Chat/FindNewInformation/HaveNewInformation.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/Chat/GetNewInformation/ShowNewInformationTieServlet.java" />
         <option value="$PROJECT_DIR$/src/Chat/ShowNewInformation/ShowChatInformationServlet.java" />
         <option value="$PROJECT_DIR$/web/Test/index.jsp" />
@@ -295,7 +345,18 @@
         <option value="$PROJECT_DIR$/src/Tools/decode/Decode.java" />
         <option value="$PROJECT_DIR$/src/Chat/VerifyFriend/HasThisFriend.java" />
         <option value="$PROJECT_DIR$/web/AddFriend/HasThisFriend/index.jsp" />
+        <option value="$PROJECT_DIR$/web/AddFriend/AddYourself/index.jsp" />
         <option value="$PROJECT_DIR$/src/AddFriend/GetAddFriendInformationServlet.java" />
+        <option value="$PROJECT_DIR$/src/Setting/Password/GetUserPasswordValue.java" />
+        <option value="$PROJECT_DIR$/src/Setting/Password/VerifyTwoPasswords.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/Setting/Password/index.jsp" />
+        <option value="$PROJECT_DIR$/web/Setting/Password/ErrorPage.jsp" />
+        <option value="$PROJECT_DIR$/web/Setting/Password/ErrorPage/passwordErrorI.jsp" />
+        <option value="$PROJECT_DIR$/web/Setting/Password/ErrorPage/passwordErrorII.jsp" />
+        <option value="$PROJECT_DIR$/src/Setting/Password/UpdateUserPassword.java" />
+        <option value="$PROJECT_DIR$/src/Setting/Password/VerifyUserOrdPassword.java" />
+        <option value="$PROJECT_DIR$/src/Setting/Password/GetNewPasswordServlet.java" />
       </list>
     </option>
   </component>
@@ -312,9 +373,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="1440" />
+    <option name="width" value="720" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectView">
@@ -322,6 +383,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -338,13 +400,14 @@
               <item name="OnlineDatingSite" type="b2602c69:ProjectViewProjectNode" />
               <item name="OnlineDatingSite" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="AddFriend" type="462c0819:PsiDirectoryNode" />
+              <item name="Setting" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OnlineDatingSite" type="b2602c69:ProjectViewProjectNode" />
               <item name="OnlineDatingSite" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Chat" type="462c0819:PsiDirectoryNode" />
+              <item name="Setting" type="462c0819:PsiDirectoryNode" />
+              <item name="Password" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OnlineDatingSite" type="b2602c69:ProjectViewProjectNode" />
@@ -355,26 +418,33 @@
               <item name="OnlineDatingSite" type="b2602c69:ProjectViewProjectNode" />
               <item name="OnlineDatingSite" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="AddFriend" type="462c0819:PsiDirectoryNode" />
+              <item name="Setting" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OnlineDatingSite" type="b2602c69:ProjectViewProjectNode" />
               <item name="OnlineDatingSite" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="AddFriend" type="462c0819:PsiDirectoryNode" />
-              <item name="HasThisFriend" type="462c0819:PsiDirectoryNode" />
+              <item name="Setting" type="462c0819:PsiDirectoryNode" />
+              <item name="Password" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OnlineDatingSite" type="b2602c69:ProjectViewProjectNode" />
               <item name="OnlineDatingSite" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="Main" type="462c0819:PsiDirectoryNode" />
+              <item name="Setting" type="462c0819:PsiDirectoryNode" />
+              <item name="Password" type="462c0819:PsiDirectoryNode" />
+              <item name="ErrorPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OnlineDatingSite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OnlineDatingSite" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -382,7 +452,7 @@
     <property name="SearchEverywhereHistoryKey" value="set Background Image&#9;PSI&#9;JAVA://org.w3c.dom.css.CSS2Properties#setBackgroundImage" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543035493090" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543219070420" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -428,25 +498,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Decode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tools.decode.Decode" />
+    <configuration name="GetUserPasswordValue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Setting.Password.GetUserPasswordValue" />
       <module name="OnlineDatingSite" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tools.decode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GetYourUnicode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tools.Password.GetYourUnicode" />
-      <module name="OnlineDatingSite" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tools.Password.*" />
+          <option name="PATTERN" value="Setting.Password.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -467,12 +524,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="doing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tools.Password.doing" />
+    <configuration name="VerifyTwoPasswords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Setting.Password.VerifyTwoPasswords" />
       <module name="OnlineDatingSite" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tools.Password.*" />
+          <option name="PATTERN" value="Setting.Password.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VerifyUserOrdPassword" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Setting.Password.VerifyUserOrdPassword" />
+      <module name="OnlineDatingSite" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Setting.Password.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -619,19 +689,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.liupengTomcat" />
-      <item itemvalue="Application.doing" />
-      <item itemvalue="Application.Decode" />
-      <item itemvalue="Application.GetYourUnicode" />
       <item itemvalue="Application.DIYCode" />
       <item itemvalue="Application.HasThisFriend" />
+      <item itemvalue="Application.GetUserPasswordValue" />
+      <item itemvalue="Application.VerifyUserOrdPassword" />
+      <item itemvalue="Application.VerifyTwoPasswords" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.VerifyUserOrdPassword" />
+        <item itemvalue="Application.VerifyTwoPasswords" />
+        <item itemvalue="Application.GetUserPasswordValue" />
         <item itemvalue="Application.HasThisFriend" />
         <item itemvalue="Application.DIYCode" />
-        <item itemvalue="Application.GetYourUnicode" />
-        <item itemvalue="Application.Decode" />
-        <item itemvalue="Application.doing" />
       </list>
     </recent_temporary>
   </component>
@@ -671,14 +741,8 @@
       <workItem from="1542813231406" duration="1692000" />
       <workItem from="1542847643701" duration="20800000" />
       <workItem from="1542940562589" duration="13773000" />
-      <workItem from="1543034961948" duration="772000" />
-    </task>
-    <task id="LOCAL-00020" summary="添加好友 V1.0.2">
-      <created>1541262123364</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1541262123364</updated>
+      <workItem from="1543034961948" duration="2868000" />
+      <workItem from="1543214140888" duration="4898000" />
     </task>
     <task id="LOCAL-00021" summary="添加好友 V1.0.3">
       <created>1541338746211</created>
@@ -1016,27 +1080,34 @@
       <option name="project" value="LOCAL" />
       <updated>1542993174795</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="好友去重">
+      <created>1543035780771</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1543035780772</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118126000" />
+    <option name="totallyTimeSpent" value="125120000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49044585" visible="true" weight="0.24678111" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48917198" visible="true" weight="0.25035766" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" sideWeight="0.50955415" side_tool="true" weight="0.2811159" />
+      <window_info id="Web" order="7" sideWeight="0.510828" side_tool="true" weight="0.25035766" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.43312103" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43312103" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1066,7 +1137,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="聊天.与浩宇聊天 V1.1.4" />
     <MESSAGE value="删除好友.删除好友函数¥Servlet V1.0.0" />
     <MESSAGE value="删除好友.成功页面&amp;失败页面 V1.0.1" />
     <MESSAGE value="MAC修改数据库 V1.0.0" />
@@ -1091,150 +1161,10 @@
     <MESSAGE value="密文发送" />
     <MESSAGE value="解析密文" />
     <MESSAGE value="查看是否有好友？" />
-    <option name="LAST_COMMIT_MESSAGE" value="查看是否有好友？" />
+    <MESSAGE value="好友去重" />
+    <option name="LAST_COMMIT_MESSAGE" value="好友去重" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/AddFriend/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddFriend/FindFriend/FindFriend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Login/GetLoginInformationServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Login/GetUserPasswordValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddFriend/OperationApplication/OperationApplyServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddFriend/OperationApplication/DonotAgreeApply.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="100" column="29" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddFriend/OperationApplication/AgreeApply.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tools/LinkDatabase/linkDatabases.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Signin/GetSigninInformationServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Chat/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="9" selection-start-line="13" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddFriend/OperationApplication/Unupdate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddFriend/GetApplyFriendInformation/GetApplyFriendInformationServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="72" column="109" selection-start-line="72" selection-start-column="109" selection-end-line="72" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Friends/SelectFriends/SelectMyFriendsServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="18" column="56" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EndOfAddFriend/Itme.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EndOfAddFriend/HowFruitFriendApply.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="77" column="7" lean-forward="true" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EndOfAddFriend/GetAddFriendFruitServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="85" column="39" lean-forward="true" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat/FindFriendToChat/ChatServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="62" column="41" lean-forward="true" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat/EncryptInformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="123" column="21" lean-forward="true" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat/GetNewInformation/GetNewInformation.java" />
-    <entry file="file://$PROJECT_DIR$/src/Chat/GetNewInformation/ShowNewInformationTieServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="71" column="28" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Chat/FindNewInformation/Itme02.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1312,13 +1242,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Main/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Friends/ShowFriend/SelectFriend.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -1365,9 +1288,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1382,6 +1302,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3000">
           <caret line="206" selection-start-line="206" selection-end-line="206" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chat/VerifyFriend/HasThisFriend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/AddFriend/AddYourself/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/AddFriend/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/AddFriend/HasThisFriend/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="5" selection-start-line="13" selection-start-column="4" selection-end-line="25" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1420,34 +1371,247 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat/VerifyFriend/HasThisFriend.java">
+    <entry file="file://$PROJECT_DIR$/src/AddFriend/GetAddFriendInformationServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="64" column="38" lean-forward="true" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Setting/Password/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/OnlineDatingSite_war_exploded/About/about.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/OnlineDatingSite/About/test.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#170#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/AddFriend/index.jsp">
+    <entry file="file://$PROJECT_DIR$/out/production/OnlineDatingSite/AddFriend/FindFriend/FindFriend.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        <state relative-caret-position="186">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#1496#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/AddFriend/HasThisFriend/index.jsp">
+    <entry file="file://$PROJECT_DIR$/out/production/OnlineDatingSite/AddFriend/GetApplyFriendInformation/GetApplyFriendInformationServlet.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        <state relative-caret-position="507">
+          <caret line="71" column="66" lean-forward="true" selection-start-line="71" selection-start-column="66" selection-end-line="71" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#2977#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddFriend/GetAddFriendInformationServlet.java">
+    <entry file="file://$PROJECT_DIR$/out/production/OnlineDatingSite/Chat/FindNewInformation/GetTieNumber.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state>
+          <folding>
+            <element signature="e#0#2009#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/OnlineDatingSite/Chat/FindNewInformation/HaveNewInformation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#1945#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/OnlineDatingSite/Chat/FindNewInformation/Itme02.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#1227#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login/GetUserPasswordValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login/GetLoginInformationServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="75" column="22" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Setting/Password/GetUserPasswordValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Setting/Password/VerifyTwoPasswords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="54" column="23" lean-forward="true" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
+          <folding>
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#1000#1001#0" expanded="true" />
+            <element signature="e#1052#1053#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1108#1109#0" expanded="true" />
+            <element signature="e#1147#1148#0" expanded="true" />
+            <element signature="e#1177#1178#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="149" column="33" lean-forward="true" selection-start-line="149" selection-start-column="33" selection-end-line="149" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Main/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Setting/Password/ErrorPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Setting/Password/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Setting/Password/ErrorPage/passwordErrorI.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Setting/Password/ErrorPage/passwordErrorII.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Setting/Password/UpdateUserPassword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="79" column="37" selection-start-line="78" selection-start-column="8" selection-end-line="79" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#794#795#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Setting/Password/VerifyUserOrdPassword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#825#826#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#894#895#0" expanded="true" />
+            <element signature="e#929#930#0" expanded="true" />
+            <element signature="e#960#961#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1124#1125#0" expanded="true" />
+            <element signature="e#1182#1183#0" expanded="true" />
+            <element signature="e#1232#1233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Setting/Password/GetNewPasswordServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="79" column="12" lean-forward="true" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
+          <folding>
+            <element signature="e#1955#1956#0" expanded="true" />
+            <element signature="e#1990#1991#0" expanded="true" />
+            <element signature="e#2046#2047#0" expanded="true" />
+            <element signature="e#2094#2095#0" expanded="true" />
+            <element signature="e#1886#1887#0" expanded="true" />
+            <element signature="e#1922#1923#0" expanded="true" />
+            <element signature="e#1980#1981#0" expanded="true" />
+            <element signature="e#2030#2031#0" expanded="true" />
+            <element signature="e#2071#2072#0" expanded="true" />
+            <element signature="e#2108#2109#0" expanded="true" />
+            <element signature="e#2168#2169#0" expanded="true" />
+            <element signature="e#2220#2221#0" expanded="true" />
+            <element signature="e#2254#2255#0" expanded="true" />
+            <element signature="e#2284#2285#0" expanded="true" />
+            <element signature="e#2330#2331#0" expanded="true" />
+            <element signature="e#2368#2369#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

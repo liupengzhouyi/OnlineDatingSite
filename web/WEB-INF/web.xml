@@ -145,4 +145,13 @@
         <servlet-name>ShowChatNumbersServlet</servlet-name>
         <url-pattern>/Chat/ShowNewInformation/ShowChatNumbersServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetNewPasswordServlet</servlet-name>
+        <servlet-class>Setting.Password.GetNewPasswordServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetNewPasswordServlet</servlet-name>
+        <url-pattern>/Setting/Password/GetNewPasswordServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

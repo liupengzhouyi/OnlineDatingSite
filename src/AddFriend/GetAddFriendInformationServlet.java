@@ -34,33 +34,40 @@ public class GetAddFriendInformationServlet extends HttpServlet {
                 if (new FindFriend(this.getFriendId()).friendIsExist()) {
 
 
-                    //是否已经拥有这个好友
-                    boolean hasFriend = false;
-                    HasThisFriend hasThisFriend = new HasThisFriend(this.getMyId(), getFriendId());
-                    if (hasThisFriend.isHas()) {
-                        //已经拥有了
-                        //跳转页面
-                        System.out.println("您已经拥有这个好友");
-                        response.sendRedirect("/AddFriend/HasThisFriend/index.jsp");
+                    //判断所添加的好友是不是自己？
+                    if(this.getMyId().equals(this.getFriendId())) {
+                        System.out.println("卧槽！你居然添加自己为好友？");
+                        response.sendRedirect("/AddFriend/AddYourself/index.jsp");
                     } else {
-                        //没有这个好友
-                        //准备数据哭语句
-                        //好友申请SQL
-                        String sqlI = "insert into my_friends(my_id, my_friend_id, my_name, my_friend_name, friend_date, friendship)" +
-                                " values (\\\'" + this.getMyId() + "\\\', \\\'" + this.getFriendId() + "\\\', \\\'\\\', \\\'" + this.getFriendName() + "\\\', now(), 1);";
-                        //好友申请通知好SQL
-                        String sqlII = "insert into apply_for_friend(friend_number, my_number, my_sql, new_key) " +
-                                "values (\'" + this.getFriendId() + "\', \'" + this.getMyId() + "\', \'" + sqlI + "\', 1);";
+                        //是否已经拥有这个好友
+                        boolean hasFriend = false;
+                        HasThisFriend hasThisFriend = new HasThisFriend(this.getMyId(), getFriendId());
+                        //如果已经拥有
+                        if (hasThisFriend.isHas()) {
+                            //已经拥有了
+                            //跳转页面
+                            System.out.println("您已经拥有这个好友");
+                            response.sendRedirect("/AddFriend/HasThisFriend/index.jsp");
+                        } else {
+                            //没有这个好友
+                            //准备数据哭语句
+                            //好友申请SQL
+                            String sqlI = "insert into my_friends(my_id, my_friend_id, my_name, my_friend_name, friend_date, friendship)" +
+                                    " values (\\\'" + this.getMyId() + "\\\', \\\'" + this.getFriendId() + "\\\', \\\'\\\', \\\'" + this.getFriendName() + "\\\', now(), 1);";
+                            //好友申请通知好SQL
+                            String sqlII = "insert into apply_for_friend(friend_number, my_number, my_sql, new_key) " +
+                                    "values (\'" + this.getFriendId() + "\', \'" + this.getMyId() + "\', \'" + sqlI + "\', 1);";
 
-                        ////////////////////////
-                        System.out.println(sqlI);
-                        System.out.println(sqlII);
-                        ////////////////////////
-                        //发送添加好友请求
-                        //this.saveData(sqlI);
-                        this.saveData(sqlII);
-                        System.out.println("添加好友信息已发出，等待好友验证！");
-                        response.sendRedirect("/AddFriend/Success/index.jsp");
+                            ////////////////////////
+                            System.out.println(sqlI);
+                            System.out.println(sqlII);
+                            ////////////////////////
+                            //发送添加好友请求
+                            //this.saveData(sqlI);
+                            this.saveData(sqlII);
+                            System.out.println("添加好友信息已发出，等待好友验证！");
+                            response.sendRedirect("/AddFriend/Success/index.jsp");
+                        }
                     }
                 } else {
                     //没有这个账号
