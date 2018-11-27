@@ -7,15 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7402b093-bb6d-4217-8041-c55d166f3b98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ContactUs/GetUserProblomServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ContactUs/ErrorPage/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ContactUs/Success/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tools/GetTime/getNowTime.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ContactUs/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ContactUs/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ContactUs/yourProblem.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ContactUs/yourProblem.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Main/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Main/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -108,7 +101,7 @@
         <counts>
           <entry key="java" value="24608" />
           <entry key="jsp" value="3360" />
-          <entry key="txt" value="624" />
+          <entry key="txt" value="632" />
           <entry key="xml" value="358" />
         </counts>
       </usages-collector>
@@ -116,7 +109,7 @@
         <counts>
           <entry key="JAVA" value="24601" />
           <entry key="JSP" value="3360" />
-          <entry key="PLAIN_TEXT" value="624" />
+          <entry key="PLAIN_TEXT" value="632" />
           <entry key="RegExp" value="7" />
           <entry key="XML" value="358" />
         </counts>
@@ -141,8 +134,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ContactUs/GetUserProblomServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+            <state relative-caret-position="195">
+              <caret line="22" column="56" lean-forward="true" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
               <folding>
                 <element signature="e#1923#1924#0" expanded="true" />
                 <element signature="e#1953#1954#0" expanded="true" />
@@ -402,7 +395,7 @@
     <property name="SearchEverywhereHistoryKey" value="set Background Image&#9;PSI&#9;JAVA://org.w3c.dom.css.CSS2Properties#setBackgroundImage" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543311897386" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543312181097" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -819,14 +812,7 @@
       <workItem from="1542940562589" duration="13773000" />
       <workItem from="1543034961948" duration="2868000" />
       <workItem from="1543214140888" duration="13099000" />
-      <workItem from="1543307028023" duration="4710000" />
-    </task>
-    <task id="LOCAL-00024" summary="添加好友.查找好友 V1.0.6">
-      <created>1541411007865</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1541411007865</updated>
+      <workItem from="1543307028023" duration="5398000" />
     </task>
     <task id="LOCAL-00025" summary="添加好友.获取好友申请 V1.0.7">
       <created>1541411822243</created>
@@ -1164,17 +1150,23 @@
       <option name="project" value="LOCAL" />
       <updated>1543310133317</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="联系我们">
+      <created>1543311991161</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1543311991161</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138031000" />
+    <option name="totallyTimeSpent" value="138719000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48789808" visible="true" weight="0.26180258" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48789808" visible="true" weight="0.26180258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1184,7 +1176,7 @@
       <window_info id="Web" order="7" sideWeight="0.5121019" side_tool="true" weight="0.26180258" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.61273885" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.61273885" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1214,7 +1206,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="界面.关联注册&amp;登录 V1.0.0" />
     <MESSAGE value="界面.添加好友.bug V1.0.1" />
     <MESSAGE value="界面.添加好友.发送好友申请 V1.0.2" />
     <MESSAGE value="界面.添加好友.完成 V1.0.3" />
@@ -1239,7 +1230,8 @@
     <MESSAGE value="修改密码" />
     <MESSAGE value="删除好友" />
     <MESSAGE value="重构1.0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="重构1.0.1" />
+    <MESSAGE value="联系我们" />
+    <option name="LAST_COMMIT_MESSAGE" value="联系我们" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Tools/Password/password.java">
@@ -1576,8 +1568,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ContactUs/GetUserProblomServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        <state relative-caret-position="195">
+          <caret line="22" column="56" lean-forward="true" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
           <folding>
             <element signature="e#1923#1924#0" expanded="true" />
             <element signature="e#1953#1954#0" expanded="true" />
