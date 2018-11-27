@@ -58,11 +58,11 @@ public class HasThisFriend {
      */
     public void createSQL() {
         String str = "select * from my_friends where " +
-                "(my_id = \'" + this.getUser_id() + "\' and " +
+                "((my_id = \'" + this.getUser_id() + "\' and " +
                 "my_friend_id = \'" + this.getFriend_id() + "\') " +
                 "or (my_id = \'" + this.getFriend_id() + "\' and " +
-                "my_friend_id = \'" + this.getUser_id() + "\') and friendship = 1;";
-        //System.out.println(str);
+                "my_friend_id = \'" + this.getUser_id() + "\')) and friendship = 1;";
+        System.out.println(str);
         this.setSql(str);
     }
 
@@ -110,7 +110,6 @@ public class HasThisFriend {
         try {
             HasThisFriend hasThisFriend = new HasThisFriend("201811232700300", "201811212700107");
             System.out.println(hasThisFriend.isHas());
-
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {

@@ -15,7 +15,7 @@ public class DeleteFriend {
         this.setMy_id(my_id);
         //设置SQL语句
         this.setSql();
-        this.setSqlI();
+        //this.setSqlI();
         //开始删除好友
         this.processingInformation();
     }
@@ -28,7 +28,7 @@ public class DeleteFriend {
     public void processingInformation() throws ClassNotFoundException, SQLException {
         linkDatabases lpLinkDatabases = new linkDatabases();
         lpLinkDatabases.updateData(this.getSql());
-        lpLinkDatabases.saveData(this.getSqlI());
+        //lpLinkDatabases.saveData(this.getSqlI());
     }
 
     /**
@@ -65,8 +65,9 @@ public class DeleteFriend {
      */
     public void setSql() {
         this.sql = "update my_friends set friendship = 0 where " +
-                "(friend_id = \'" + this.getFriend_id() + "\' and my_id = \'" + this.getMy_id() + "\' ) " +
-                "or (friend_id = \'" + this.getMy_id() + "\' and my_id = \'" + this.getFriend_id() + "\');";
+                "(my_friend_id = \'" + this.getFriend_id() + "\' and my_id = \'" + this.getMy_id() + "\' ) " +
+                "or (my_friend_id = \'" + this.getMy_id() + "\' and my_id = \'" + this.getFriend_id() + "\');";
+        System.out.println(this.sql);
     }
 
     public String getSqlI() {
@@ -84,5 +85,9 @@ public class DeleteFriend {
     //SQL语句
     private String sql = null;
     private String sqlI = null;
+
+    public static void main(String[] args) throws SQLException, ClassNotFoundException {
+        DeleteFriend deleteFriend = new DeleteFriend("201811232700300", "201811212700107");
+    }
 
 }

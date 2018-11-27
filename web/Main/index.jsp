@@ -31,7 +31,7 @@
             </a>
         </td>
         <td>
-            <a href="/DeleteFriend.DeleteFriendServlet">
+            <a href="/DeleteFriend/DeleteFriendServlet">
                 删除好友
             </a>
         </td>

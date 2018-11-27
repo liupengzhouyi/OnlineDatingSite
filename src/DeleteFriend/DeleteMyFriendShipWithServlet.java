@@ -1,5 +1,7 @@
 package DeleteFriend;
 
+import javafx.stage.StageStyle;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,7 +20,7 @@ public class DeleteMyFriendShipWithServlet extends HttpServlet {
         try {
             this.deleteFriend();
             //删除好友关系成功
-
+            response.sendRedirect("/DeleteFriend/Success/index.jsp");
         } catch (SQLException e) {
             //删除好友关系失败
 
@@ -26,7 +28,6 @@ public class DeleteMyFriendShipWithServlet extends HttpServlet {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
             //删除好友关系失败
-
             //response.setContentType("/");
             e.printStackTrace();
         }
@@ -47,6 +48,9 @@ public class DeleteMyFriendShipWithServlet extends HttpServlet {
         this.setMy_id((String) httpSession.getAttribute("user_id"));
         //获取&设置你的好友账号
         this.setFriend_id(request.getParameter("friend_id"));
+        //
+        System.out.println("用户ID" + this.getMy_id());
+        System.out.println("好友ID" + this.getFriend_id());
     }
 
     /**

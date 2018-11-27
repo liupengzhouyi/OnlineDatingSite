@@ -24,11 +24,13 @@ public class GetChatInformationServlet extends HttpServlet {
             //准备SQL语句
             //  1。 聊天信息
             //  2。 新信息提示
-            this.createSQLI() ;
+            this.createSQLI();
             this.createSQLII();
             //数据入库
             try {
                 this.saveData();
+                System.out.println("聊天信息保存成功！");
+                response.sendRedirect("/Chat/Success/informationSentSuccess.jsp");
             } catch (ClassNotFoundException e) {
                 //数据入库出错，错误地址聊天信息出错
                 System.out.println("数据入库出错，错误地址聊天信息出错");

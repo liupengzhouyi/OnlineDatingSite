@@ -24,7 +24,6 @@ public class GetApplyFriendInformationServlet extends HttpServlet {
         //获取PrintWriter对象
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter printWriter = response.getWriter();
-
         //判断是否拥有好友
         try {
             if (this.hasFriend(user_id)) {
@@ -34,6 +33,7 @@ public class GetApplyFriendInformationServlet extends HttpServlet {
             } else {
                 //没有好友，页面跳转
                 System.out.println("没有好友申请！");
+                response.sendRedirect("/Friends/ErroePage/nofriend.jsp");
             }
         } catch (ClassNotFoundException e) {
             //数据库连接查询失败
@@ -42,6 +42,7 @@ public class GetApplyFriendInformationServlet extends HttpServlet {
             e.printStackTrace();
         } catch (SQLException e) {
             //数据库连接查询失败
+
 
 
             e.printStackTrace();
@@ -90,7 +91,7 @@ public class GetApplyFriendInformationServlet extends HttpServlet {
         //连接数据库
         linkDatabases lpLinkDatabases = new linkDatabases();
         //准备SQL语句
-        String sql = "select * from apply_for_friend where friend_number = \'" + user_id + "\';";
+        String sql = "select * from apply_for_friend where friend_number = \'" + user_id + "\' and new_key = 1;";
         ResultSet resultSet = lpLinkDatabases.getInformation(sql);
             printWriter.println("<table border=\"1\">\n" +
                                 "    <tr>\n" +

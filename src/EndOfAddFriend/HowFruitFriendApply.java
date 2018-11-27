@@ -61,7 +61,9 @@ public class HowFruitFriendApply {
     }
 
     public void setSql() {
-        this.sql = "select apply_for_friend.friend_number friend_id, apply_for_friend.new_key new_key, apply_return.can_make can from apply_for_friend join apply_return on apply_for_friend.my_number = apply_return.my_id where apply_for_friend.my_number = \'" + this.getUser_id() + "\';";
+        this.sql = "select apply_for_friend.friend_number friend_id, apply_for_friend.new_key new_key, apply_return.can_make can from apply_for_friend, apply_return where apply_for_friend.my_number = \'" + this.getUser_id() + "\' and apply_for_friend.apply_id = apply_return.return_id;";
+        System.out.println("查看你的获取申请好友结果：");
+        System.out.println(this.sql);
     }
 
     public ArrayList<Itme> getList() {

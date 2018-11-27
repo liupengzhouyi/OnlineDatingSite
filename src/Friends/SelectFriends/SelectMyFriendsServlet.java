@@ -34,7 +34,7 @@ public class SelectMyFriendsServlet extends HttpServlet {
             } else {
                 //如果没有
                 //页面跳转，首页
-                response.sendRedirect("/");
+                response.sendRedirect("/Friends/ErroePage/nofriend.jsp");
             }
         } catch (ClassNotFoundException e) {
             //判断是否拥有好友时候出错，页面跳转

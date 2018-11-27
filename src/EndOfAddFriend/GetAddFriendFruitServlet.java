@@ -31,6 +31,7 @@ public class GetAddFriendFruitServlet extends HttpServlet {
         //是否有好友申请
         if(list.size() == 0) {
             System.out.println("您没有好友申请！");
+            response.sendRedirect("/EndOfAddFriend/Error/NoEndOfApplyInformation.jsp");
         } else {
             System.out.println("显示你的好友申请");
             PrintWriter printWriter = response.getWriter();
