@@ -11,7 +11,7 @@
     <title>Tell us about your problem</title>
 </head>
 <body>
-    <form action="" method="post">
+    <form action="/ContactUs/GetUserProblomServlet" method="post">
         <table>
             <tr>
                 <th colspan="2">

@@ -74,7 +74,7 @@
     </tr>
     <tr>
         <td>
-            <a href="">
+            <a href="/ContactUs/index.jsp">
                 联系我们
             </a>
         </td>

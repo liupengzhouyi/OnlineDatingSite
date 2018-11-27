@@ -11,6 +11,40 @@
     <title>Title</title>
 </head>
 <body>
-
+    <div>
+        <center>
+            <h1>
+                联系我们
+            </h1>
+        </center>
+    </div>
+<hr>
+<br>
+<br>
+<br>
+<div>
+    <center>
+        <table border="1">
+            <tr>
+                <h2>
+                    <center>
+                        <a href="/ContactUs/yourProblem.jsp">
+                            告诉我们你的问题！
+                        </a>
+                    </center>
+                </h2>
+            </tr>
+            <tr>
+                <h2>
+                    <center>
+                        <a href="/ContactUs/yourProblem.jsp">
+                            Bit版本报错！
+                        </a>
+                    </center>
+                </h2>
+            </tr>
+        </table>
+    </center>
+</div>
 </body>
 </html>

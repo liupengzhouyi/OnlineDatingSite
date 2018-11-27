@@ -165,4 +165,14 @@
         <servlet-name>DeleteFriendServlet</servlet-name>
         <url-pattern>/DeleteFriend/DeleteFriendServlet</url-pattern>
     </servlet-mapping>
+
+    <!--获取用户的问题-->
+    <servlet>
+        <servlet-name>GetUserProblomServlet</servlet-name>
+        <servlet-class>ContactUs.GetUserProblomServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetUserProblomServlet</servlet-name>
+        <url-pattern>/ContactUs/GetUserProblomServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
